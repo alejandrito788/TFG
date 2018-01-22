@@ -8,6 +8,7 @@
         var deporteActivo = "list-group-item active";
         var seleccionados = ["No", "No", "No","No"];
         var opera=0;    //Marca si el procesamiento esta operando o detenido
+        var ruta='http://localhost:8080/AnalisisDeportivoMalaga';
 
         function iniciaDeporteSeleccionado(){
             deporte = document.getElementById('deporteConcreto').value;
@@ -42,7 +43,7 @@
         function tendenciaPeriodica(){
             $.ajax({
                 type: 'GET',
-                url: '${pageContext.request.contextPath}/actualizaTendencia',
+                url: ruta+'/actualizaTendencia',
                 success: function(result){                   
                     $('#numTendencia').val(result);
                     iniciaBarraSeleccion();
@@ -57,7 +58,7 @@
             
             $.ajax({
                 type: 'POST',
-                url: '${pageContext.request.contextPath}/flujoTwitter',
+                url: ruta+'/flujoTwitter',
                 success: function(){
                     deseleccionaCampo(null);
                     document.getElementById('numTendencia').value=0;
@@ -105,7 +106,7 @@
                   deseleccionaCampo(i);
                   $.ajax({
                     type: 'POST',
-                    url: '${pageContext.request.contextPath}/miTendencia/'+deporte
+                    url: ruta+'/miTendencia/'+deporte
                   });
               }
                 
@@ -113,7 +114,7 @@
 
             $.ajax({
                 type: 'POST',
-                url: '${pageContext.request.contextPath}/miTendencia/'+deporte,
+                url: ruta+'/miTendencia/'+deporte,
                 success: function(){
                     seleccionados[i-1]="Si";
                     iniciaDeporteSeleccionado();

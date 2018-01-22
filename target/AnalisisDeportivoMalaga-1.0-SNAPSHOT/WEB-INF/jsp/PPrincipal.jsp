@@ -521,7 +521,7 @@
             <div class="panel-body">
                 <image id="icono" src="street-view.png" style="display:none"/>
                 <input  type="text" id="direccionConcreta" value="" style="display:none"/>
-                <button id="btnUbicacion" onclick="ubicacionManual(${pageContext.request.contextPath})" value="add" style="display:none"/>Actualizar  <br/>              
+                <button id="btnUbicacion" onclick="ubicacionManual()" value="add" style="display:none"/>Actualizar  <br/>              
                 <input type="hidden" id="miLat" value="36.7585406"/>
                 <input type="hidden" id="miLng" value="-4.3971722"/>
             </div>

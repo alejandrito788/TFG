@@ -13,6 +13,7 @@
             var centrosdeportivos = 1; //esta mostrandose
             var piscinas=0;
             var musculacion=0;
+            var ruta = 'http://localhost:8080/AnalisisDeportivoMalaga';
     function cambiaCapa(obj,i){
             
             if(obj.checked){
@@ -91,12 +92,12 @@
           }
         }        
 
-    function ubicacionManual(x){
+    function ubicacionManual(){
             direccion = document.getElementById('direccionConcreta').value;
             
                 $.ajax({
                 type: 'GET',
-                url: x+'/mostrarMapa/'+direccion,
+                url: ruta+'/mostrarMapa/'+direccion,
                 success: function(result){                   
                     $('#miLat').val(result[0]);
                     $('#miLng').val(result[1]);

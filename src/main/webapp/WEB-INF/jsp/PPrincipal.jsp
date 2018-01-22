@@ -28,8 +28,7 @@
         <!-- css-->
         <link rel="stylesheet" type="text/css" href="PPrincipal.css">
         <!-- modulacion de codigo javascript-->
-        <script src="inicioAplicacion.js"></script>
-        <script src="nada.js"></script>
+        <script src="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/inicioAplicacion.js"></script>
         
     
     <style>

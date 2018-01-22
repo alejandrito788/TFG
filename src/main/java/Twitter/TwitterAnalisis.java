@@ -139,7 +139,7 @@ public class TwitterAnalisis extends Thread {
                 tiempo.setTime(tiempo.getTime()+1);
 
                 for (Status status : (List<Status>) result.getTweets()) {
-             System.out.println(status.getText());
+          
                   for(String s: deporte){
                     switch(s){
                     case "correr":

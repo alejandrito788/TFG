@@ -26,16 +26,17 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
         <!-- css-->
-        <link rel="stylesheet" type="text/css" href="PPrincipal.css">
+        <link rel="stylesheet" type="text/css" href="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/PPrincipal.css">
         <!-- modulacion de codigo javascript-->
-        <script src="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/inicioAplicacion.js"></script>
-        
+        <script src="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/AmanecerWebService.js"></script>
+        <script src="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/MapaUbicaciones.js"></script>
+        <script src="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/TendenciaPeriodica.js"></script>
     
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
-        height: 80%;
+        height: 80%;        
         width: 100%;
       }
       /* Optional: Makes the sample page fill the window. */
@@ -50,7 +51,7 @@
         width: 350px;
         max-width: none; 
         overflow-y: hidden;
-        z-index: 50;
+        z-index: 50;        
       }
     </style>
     
@@ -60,7 +61,8 @@
 
     <body>
         <script>       
-            fetch('https://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400&date=today').then((respuesta)=>{
+          /*  CDN CONTROLADOR https://rawgit.com/alejandrito788/TFG/master/src/main/java/Controlador/PrincipalController.java
+           * fetch('https://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400&date=today').then((respuesta)=>{
                return respuesta.json();
             }).then((respuesta)=>{
                 if(respuesta.status==="OK"){                   
@@ -69,10 +71,10 @@
                 }else{
                     alert("Horario indeterminado");
                 }
-            });                                          //asincrono. Llama a la funcion cuando recibe respuesta del servicio
+            });   */                                       //asincrono. Llama a la funcion cuando recibe respuesta del servicio
         </script>
         <script>          
-            var centrosdeportivos = 1; //esta mostrandose
+           /* var centrosdeportivos = 1; //esta mostrandose
             var piscinas=0;
             var musculacion=0;
         function cambiaCapa(obj,i){
@@ -394,10 +396,10 @@
                 }
                 seleccionados[obj-1]="No";
             }
-        }
+        }*/
         </script>
         <script>
-
+/*
         function iniciaDeporteSeleccionado(){
             deporte = document.getElementById('deporteConcreto').value;
 
@@ -473,7 +475,7 @@
         seleccionados = ["No", "No", "No","No"];
         opera=0;    //Marca si el procesamiento esta operando o detenido
 	window.onload = init;
-        
+        */
         </script>
         
         <div class="page-header">
@@ -519,7 +521,7 @@
             <div class="panel-body">
                 <image id="icono" src="street-view.png" style="display:none"/>
                 <input  type="text" id="direccionConcreta" value="" style="display:none"/>
-                <button id="btnUbicacion" onclick="ubicacionManual()" value="add" style="display:none"/>Actualizar  <br/>              
+                <button id="btnUbicacion" onclick="ubicacionManual(${pageContext.request.contextPath})" value="add" style="display:none"/>Actualizar  <br/>              
                 <input type="hidden" id="miLat" value="36.7585406"/>
                 <input type="hidden" id="miLng" value="-4.3971722"/>
             </div>

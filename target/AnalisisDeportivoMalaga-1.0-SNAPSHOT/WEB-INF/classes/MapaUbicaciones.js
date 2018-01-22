@@ -91,12 +91,12 @@
           }
         }        
 
-    function ubicacionManual(){
+    function ubicacionManual(x){
             direccion = document.getElementById('direccionConcreta').value;
             
                 $.ajax({
                 type: 'GET',
-                url: '${pageContext.request.contextPath}/mostrarMapa/'+direccion,
+                url: x+'/mostrarMapa/'+direccion,
                 success: function(result){                   
                     $('#miLat').val(result[0]);
                     $('#miLng').val(result[1]);

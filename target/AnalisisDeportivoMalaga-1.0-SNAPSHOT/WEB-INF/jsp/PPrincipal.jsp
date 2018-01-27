@@ -85,8 +85,13 @@
             width:80px;
             left:150px;
             top:30px;
+            padding: 5px;
             position:absolute;
         }
+        .item{
+           padding:50px;      
+        }
+
     </style>
     
     
@@ -516,11 +521,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-1">
-                <img id="logo" src="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/logo-designer.png"/>
+                <img id="logo" src="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/logo.png"/>
             </div>
             <div class="col-md-11">
                 <h1>2TRAIN<small>Ciudad de Málaga</small></h1>
-            </div>          
+            </div>
         </div>
     </div>
         
@@ -641,13 +646,23 @@
                     <div class="panel-heading">
                         <h6 class="panel-title">Personas pensando en tus deportes seleccionados(%)</h6>
                     </div>
-                    <button type="button" onclick="ayuda()" class="btn btn-info">
-                        <span class="glyphicon glyphicon-question-sign"></span> 
-                    </button>
+                    
                 <div class="panel-body">
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" id="tendenciaProg" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>                        
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-11">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" id="tendenciaProg" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>                        
+                                </div>
+                            </div>
+                            <div class="col-md-1">
+                                    <button type="button" onclick="ayuda()" class="btn btn-info">
+                                        <span class="glyphicon glyphicon-question-sign"></span> 
+                                     </button>
+                            </div>
+                        </div>
                     </div>
+                    
                     <button type="button" onclick="detieneProceso()" class="btn btn-danger">Stop</button>
                 </div>               
             </div>

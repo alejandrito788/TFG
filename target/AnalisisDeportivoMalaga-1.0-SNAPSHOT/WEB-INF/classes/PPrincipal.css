@@ -7,6 +7,70 @@
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 /* Styles */
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 80%;        
+        width: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      
+      div.cartodb-tooltip {
+        position: absolute;
+        width: 350px;
+        max-width: none; 
+        overflow-y: hidden;
+        z-index: 50;        
+      }
+      
+      h1{
+        font-family: Vegur, Verdana, Sans-serif;
+        font-weight: 800;
+        font-size: 500%;
+        text-align: center;
+        }
+        .page-header{
+            background: lightblue url("http://3.bp.blogspot.com/-Ahb4YdtrgUg/T-UyP31pc5I/AAAAAAAAABs/8mjzvDAE4M8/s1600/cielo%20claro.JPG") no-repeat
+        }
+        #map{
+            border: solid;
+        }
+        #panelHorario{
+            width: 450px;        
+            position: relative;
+            margin-left: 110px;
+        }
+        #panelHorario1{
+            width:170px;
+        }
+        #panelHorario2{
+            width:170px;
+        }
+        
+        #panelUbicacion{
+            width: 300px;
+            margin-left:10px;
+        }
+        #icono{
+            height: 50px;
+            width: 50px;
+        }
+        #logo{
+            height:80px;
+            width:80px;
+            left:150px;
+            top:30px;
+            padding: 5px;
+            position:absolute;
+        }
+        .item{
+           padding:50px;      
+        }
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -14,6 +78,70 @@ and (max-device-width : 480px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
 /* Styles */
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 80%;        
+        width: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      
+      div.cartodb-tooltip {
+        position: absolute;
+        width: 350px;
+        max-width: none; 
+        overflow-y: hidden;
+        z-index: 50;        
+      }
+      
+      h1{
+        font-family: Vegur, Verdana, Sans-serif;
+        font-weight: 800;
+        font-size: 500%;
+        text-align: center;
+        }
+        .page-header{
+            background: lightblue url("http://3.bp.blogspot.com/-Ahb4YdtrgUg/T-UyP31pc5I/AAAAAAAAABs/8mjzvDAE4M8/s1600/cielo%20claro.JPG") no-repeat
+        }
+        #map{
+            border: solid;
+        }
+        #panelHorario{
+            width: 450px;        
+            position: relative;
+            margin-left: 110px;
+        }
+        #panelHorario1{
+            width:170px;
+        }
+        #panelHorario2{
+            width:170px;
+        }
+        
+        #panelUbicacion{
+            width: 300px;
+            margin-left:10px;
+        }
+        #icono{
+            height: 50px;
+            width: 50px;
+        }
+        #logo{
+            height:80px;
+            width:80px;
+            left:150px;
+            top:30px;
+            padding: 5px;
+            position:absolute;
+        }
+        .item{
+           padding:50px;      
+        }
 }
 
 
@@ -91,4 +219,68 @@ and (min-width : 1224px) {
 @media only screen 
 and (min-width : 1824px) {
 /* Styles */
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 80%;        
+        width: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      
+      div.cartodb-tooltip {
+        position: absolute;
+        width: 350px;
+        max-width: none; 
+        overflow-y: hidden;
+        z-index: 50;        
+      }
+      
+      h1{
+        font-family: Vegur, Verdana, Sans-serif;
+        font-weight: 800;
+        font-size: 500%;
+        text-align: center;
+        }
+        .page-header{
+            background: lightblue url("http://3.bp.blogspot.com/-Ahb4YdtrgUg/T-UyP31pc5I/AAAAAAAAABs/8mjzvDAE4M8/s1600/cielo%20claro.JPG") no-repeat
+        }
+        #map{
+            border: solid;
+        }
+        #panelHorario{
+            width: 450px;        
+            position: relative;
+            margin-left: 110px;
+        }
+        #panelHorario1{
+            width:170px;
+        }
+        #panelHorario2{
+            width:170px;
+        }
+        
+        #panelUbicacion{
+            width: 300px;
+            margin-left:10px;
+        }
+        #icono{
+            height: 50px;
+            width: 50px;
+        }
+        #logo{
+            height:80px;
+            width:80px;
+            left:150px;
+            top:30px;
+            padding: 5px;
+            position:absolute;
+        }
+        .item{
+           padding:50px;      
+        }
 }

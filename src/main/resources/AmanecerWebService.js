@@ -15,4 +15,16 @@ fetch('https://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400&date=to
                 }else{
                     alert("Horario indeterminado");
                 }
-            }); 
+            });
+            
+//CARRUSEL DE FOTOS
+     $(document).ready(function(){
+        $('.myCarousel').carousel({
+            interval: 7000
+        });
+    });
+   
+//BOTON DE AYUDA EN ANALISIS DE TENDENCIA
+function ayuda(){
+           alert('Muestra del % de personas en Twitter que habla sobre los deportes que has marcado.');
+       }

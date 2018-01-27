@@ -53,6 +53,33 @@
         overflow-y: hidden;
         z-index: 50;        
       }
+      
+      h1{
+        font-family: Vegur, Verdana, Sans-serif;
+        font-weight: 800;
+        font-size: 500%;
+        text-align: center;
+        }
+        .page-header{
+            background: lightblue url("http://3.bp.blogspot.com/-Ahb4YdtrgUg/T-UyP31pc5I/AAAAAAAAABs/8mjzvDAE4M8/s1600/cielo%20claro.JPG") no-repeat
+        }
+        #map{
+            border: solid;
+        }
+        #panelHorario{
+            width: 200px;
+            height: 300px;
+            position: relative;
+            margin-left: 1010px;
+        }
+        
+        #panelUbicacion{
+            width: 300px;
+        }
+        #icono{
+            height: 50px;
+            width: 50px;
+        }
     </style>
     
     
@@ -61,7 +88,7 @@
 
     <body>
         <script>       
-          /*  CDN CONTROLADOR https://rawgit.com/alejandrito788/TFG/master/src/main/java/Controlador/PrincipalController.java
+          /* ${pageContext.request.contextPath} CDN CONTROLADOR https://rawgit.com/alejandrito788/TFG/master/src/main/java/Controlador/PrincipalController.java
            * fetch('https://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400&date=today').then((respuesta)=>{
                return respuesta.json();
             }).then((respuesta)=>{
@@ -476,11 +503,33 @@
         opera=0;    //Marca si el procesamiento esta operando o detenido
 	window.onload = init;
         */
-        </script>
         
-        <div class="page-header">
-            <h1>Análisis ambiental y deportivo<small>Ciudad de Málaga</small></h1>
+        </script>
+     <div>
+        <h1>2TRAIN<small>Ciudad de Málaga</small></h1>
+        <img id="logo" src=""/>
+     </div>
+                
+    <div class="page-header">           
+        <div id="contenedor">
+            <div id="myCarousel" class="carousel slide">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="active item"><img  src="https://static.arenawaterinstinct.com/media/arenahqimg/home_banner/VT_triathlon_800x300.jpg" alt="banner2" /></div>
+                    <div class="item"><img  src="http://itzu-tri-team.com/wp-content/uploads/2017/08/Amber-Ocean-Lava-4-800x300.jpg" alt="banner3" /></div>
+                    <div class="item"><img  src="https://i2.wp.com/entrenamehoy.com/blog/wp-content/uploads/2017/01/running-y-sus-beneficios.jpg?fit=800%2C300&ssl=1" alt="banner4" /></div>     
+                </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+            </div>
         </div>
+    </div>
         
          <div id="map" class="media"></div>
        
@@ -508,24 +557,52 @@
                 </label><br/>
                 
             </div>
-            <input id="filtradoKm" data-slider-id='ex1Slider' type="text" onchange="filtraKm(this.value)" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="20" style="display:none"/>
-        </div>
+                <h4>Filtra por distancia a ti</h4> 
+                <input id="filtradoKm" data-slider-id='ex1Slider' type="text" onchange="filtraKm(this.value)" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="20" style="display:none"/>               
+            </div>
           
         <div id="panelUbicacion" class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">Mi ubicacion</h3>
+                <h3 class="panel-title">Modifica tu ubicacion manualmente</h3>
             </div>
-           <label id="etiquetaUbi" class="checkbox-inline">
+           <label id="etiquetaUbi" class="checkbox-inline" style="margin-left:15px">
                 <input id="btnActivarUbicacion" value="activarUbicacion" type="checkbox" onchange="procesaInformacion(this)" data-toggle="toggle" data-onstyle="success"/>Visualizar              
            </label> 
+            <br/>
+            <div>
+                <image id="icono" src="https://apps.goodereader.com/wp-content/uploads/icons/2012_05_unnamed11.png" style="display:none"/>
+            </div>
             <div class="panel-body">
-                <image id="icono" src="street-view.png" style="display:none"/>
-                <input  type="text" id="direccionConcreta" value="" style="display:none"/>
+                <input  type="text" id="direccionConcreta" value="C/..." style="display:none"/>
                 <button id="btnUbicacion" onclick="ubicacionManual()" value="add" style="display:none"/>Actualizar  <br/>              
                 <input type="hidden" id="miLat" value="36.7585406"/>
                 <input type="hidden" id="miLng" value="-4.3971722"/>
             </div>
             
+        </div>
+         
+         <div id="panelHorario" class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><span class="glyphicon glyphicon-time"></span>Horario</h3>
+            </div>
+            <div class="panel-body">
+                <div id="panelHorario1" class="panel panel-default">
+                    <div class="panel-heading">
+                        <h6 class="panel-title">Amanecer</h6>
+                    </div>
+                    <div class="panel-body">
+                     <label id="amanecer" value=""/>
+                     </div>
+                </div>
+                <div id="panelHorario2" class="panel panel-default">
+                    <div class="panel-heading">
+                        <h6 class="panel-title">Atardecer</h6>
+                    </div>
+                    <div class="panel-body">
+                        <label id="atardecer" value=""/>
+                    </div>
+                </div>
+            </div>
         </div>
        
       
@@ -547,8 +624,11 @@
             
             <div id="panelProgress" class="panel panel-default">
                     <div class="panel-heading">
-                        <h6 class="panel-title">Indicador(%)</h6>
+                        <h6 class="panel-title">Personas pensando en tus deportes seleccionados(%)</h6>
                     </div>
+                    <button type="button" onclick="ayuda()" class="btn btn-info">
+                        <span class="glyphicon glyphicon-question-sign"></span> 
+                    </button>
                 <div class="panel-body">
                     <div class="progress">
                         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" id="tendenciaProg" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>                        
@@ -559,32 +639,6 @@
             </div>
 
                <input type="hidden" id="numTendencia" value=""/>
-       
-             
-          <div id="panelHorario" class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><span class="glyphicon glyphicon-search"></span>Horario</h3>
-            </div>
-            <div class="panel-body">
-                <div id="panelHorario1" class="panel panel-default">
-                    <div class="panel-heading">
-                        <h6 class="panel-title">Amanecer</h6>
-                    </div>
-                    <div class="panel-body">
-                     <label id="amanecer" value=""/>
-                     </div>
-                </div>
-                <div id="panelHorario2" class="panel panel-default">
-                    <div class="panel-heading">
-                        <h6 class="panel-title">Atardecer</h6>
-                    </div>
-                    <div class="panel-body">
-                        <label id="atardecer" value=""/>
-                    </div>
-                </div>
-            </div>
-        </div>
-            
         
     </body>
 </html>

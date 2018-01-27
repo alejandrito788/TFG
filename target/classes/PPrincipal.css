@@ -47,11 +47,18 @@ and (orientation : portrait) {
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
-/* Styles */
+    h1{
+        font-family: fantasy, Vegur, Verdana, Sans-serif;
+    }
+
 }
 
 /* Large screens ----------- */
 @media only screen 
 and (min-width : 1824px) {
 /* Styles */
+}
+
+h1{
+        font-family: fantasy, Vegur, Verdana, Sans-serif;
 }

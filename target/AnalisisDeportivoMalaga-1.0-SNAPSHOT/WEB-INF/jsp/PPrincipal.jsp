@@ -80,6 +80,13 @@
             height: 50px;
             width: 50px;
         }
+        #logo{
+            height:80px;
+            width:80px;
+            left:150px;
+            top:30px;
+            position:absolute;
+        }
     </style>
     
     
@@ -505,10 +512,18 @@
         */
         
         </script>
-     <div>
-        <h1>2TRAIN<small>Ciudad de Málaga</small></h1>
-        <img id="logo" src=""/>
-     </div>
+   
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">
+                <img id="logo" src="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/logo-designer.png"/>
+            </div>
+            <div class="col-md-11">
+                <h1>2TRAIN<small>Ciudad de Málaga</small></h1>
+            </div>          
+        </div>
+    </div>
+        
                 
     <div class="page-header">           
         <div id="contenedor">

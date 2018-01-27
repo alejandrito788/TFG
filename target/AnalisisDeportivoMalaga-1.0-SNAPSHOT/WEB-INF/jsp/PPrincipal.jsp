@@ -35,11 +35,11 @@
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-      #map {
+      /*#map {
         height: 80%;        
         width: 100%;
       }
-      /* Optional: Makes the sample page fill the window. */
+  
       html, body {
         height: 100%;
         margin: 0;
@@ -67,14 +67,20 @@
             border: solid;
         }
         #panelHorario{
-            width: 200px;
-            height: 300px;
+            width: 450px;        
             position: relative;
-            margin-left: 1010px;
+            margin-left: 110px;
+        }
+        #panelHorario1{
+            width:170px;
+        }
+        #panelHorario2{
+            width:170px;
         }
         
         #panelUbicacion{
             width: 300px;
+            margin-left:10px;
         }
         #icono{
             height: 50px;
@@ -90,7 +96,7 @@
         }
         .item{
            padding:50px;      
-        }
+        } */
 
     </style>
     
@@ -517,7 +523,7 @@
         */
         
         </script>
-   
+
     <div class="container">
         <div class="row">
             <div class="col-md-1">
@@ -540,9 +546,9 @@
                 </ol>
                 <!-- Carousel items -->
                 <div class="carousel-inner">
-                    <div class="active item"><img  src="https://static.arenawaterinstinct.com/media/arenahqimg/home_banner/VT_triathlon_800x300.jpg" alt="banner2" /></div>
-                    <div class="item"><img  src="http://itzu-tri-team.com/wp-content/uploads/2017/08/Amber-Ocean-Lava-4-800x300.jpg" alt="banner3" /></div>
-                    <div class="item"><img  src="https://i2.wp.com/entrenamehoy.com/blog/wp-content/uploads/2017/01/running-y-sus-beneficios.jpg?fit=800%2C300&ssl=1" alt="banner4" /></div>     
+                    <div class="active item"><img  src="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/natacion.jpg" alt="banner2" /></div>
+                    <div class="item"><img  src="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/ciclismo.jpg" alt="banner3" /></div>
+                    <div class="item"><img  src="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/correr.jpg" alt="banner4" /></div>     
                 </div>
             <!-- Carousel nav -->
             <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
@@ -558,8 +564,10 @@
             <div class="panel-heading">
                 <h3 class="panel-title">Filtrado</h3>
             </div>
-            <div class="panel-body">
-                  
+        <div class="panel-body">
+             <div class="container">
+                 <div clas="row">
+                     <div class="col-md-8">
                   <label class="checkbox-inline">
                       <input type="checkbox"  checked id="botonPolideportivo" name="botonera"  value="botonRecogidaBici"  onchange="cambiaCapa(this,1)" data-toggle="toggle"/> Polideportivo
                     </label><br/>
@@ -574,13 +582,25 @@
                 </label><br/>
                 <label class="checkbox-inline">
                     <input type="checkbox" id="botonZVerde" value="botonZVerde" name="botonera"  onchange="cambiaCapa(this,5)" data-toggle="toggle"/> Ruido
-                </label><br/>
-                
-            </div>
-                <h4>Filtra por distancia a ti</h4> 
-                <input id="filtradoKm" data-slider-id='ex1Slider' type="text" onchange="filtraKm(this.value)" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="20" style="display:none"/>               
-            </div>
-          
+                </label><br/>               
+                     </div>
+                     <div class="col-md-4">
+                         <div class="panel panel-default">
+                            <div class="panel-heading">
+                                    <h4>Filtra por distancia a ti (Km)</h4> 
+                            </div>
+                             <div class="panel-body">
+                                        <input id="filtradoKm" data-slider-id='ex1Slider' type="text" onchange="filtraKm(this.value)" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="20" style="display:none"/>               
+                             </div>
+                       </div>
+                 </div>
+               </div>
+             </div>
+         </div>
+        </div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6">
         <div id="panelUbicacion" class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title">Modifica tu ubicacion manualmente</h3>
@@ -589,23 +609,32 @@
                 <input id="btnActivarUbicacion" value="activarUbicacion" type="checkbox" onchange="procesaInformacion(this)" data-toggle="toggle" data-onstyle="success"/>Visualizar              
            </label> 
             <br/>
-            <div>
-                <image id="icono" src="https://apps.goodereader.com/wp-content/uploads/icons/2012_05_unnamed11.png" style="display:none"/>
+            <div class="container">
+                <div class="row">
+            <div class="col-md-1">
+                <image id="icono" src="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/peaton.png" style="display:none"/>
             </div>
+            <div class="col-md-2">
             <div class="panel-body">
                 <input  type="text" id="direccionConcreta" value="C/..." style="display:none"/>
                 <button id="btnUbicacion" onclick="ubicacionManual()" value="add" style="display:none"/>Actualizar  <br/>              
                 <input type="hidden" id="miLat" value="36.7585406"/>
                 <input type="hidden" id="miLng" value="-4.3971722"/>
             </div>
-            
+            </div>
+                </div>
+            </div>
         </div>
-         
+        </div>
+         <div class="col-md-6">
          <div id="panelHorario" class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title"><span class="glyphicon glyphicon-time"></span>Horario</h3>
             </div>
             <div class="panel-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2">
                 <div id="panelHorario1" class="panel panel-default">
                     <div class="panel-heading">
                         <h6 class="panel-title">Amanecer</h6>
@@ -614,6 +643,8 @@
                      <label id="amanecer" value=""/>
                      </div>
                 </div>
+                        </div>
+                        <div class="col-md-2">
                 <div id="panelHorario2" class="panel panel-default">
                     <div class="panel-heading">
                         <h6 class="panel-title">Atardecer</h6>
@@ -622,10 +653,14 @@
                         <label id="atardecer" value=""/>
                     </div>
                 </div>
+                        </div>
+                </div>
+                </div>
             </div>
         </div>
-       
-      
+              </div>
+              </div>
+          </div>
          <div id="panelCEP" class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title">Tendencia deportiva</h3>
@@ -669,6 +704,6 @@
             </div>
 
                <input type="hidden" id="numTendencia" value=""/>
-        
+
     </body>
 </html>

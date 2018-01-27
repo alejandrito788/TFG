@@ -162,7 +162,7 @@ public class TwitterAnalisis extends Thread {
                     for(int i=0;i<(numDeporte.length-(numDeporte.length/2));i++){                       
                         tendencia+=numDeporte[i];
                     }
-                    tendencia=(int) ((int) tendencia*FACTOR/tiempo.getTime())*FACTOR;
+                    tendencia=(int) ((int) tendencia*FACTOR/tiempo.getTime());
                 }
                     
                 Mapping.setTendencia(tendencia);              

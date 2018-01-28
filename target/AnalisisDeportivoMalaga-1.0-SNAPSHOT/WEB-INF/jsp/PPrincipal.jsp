@@ -84,7 +84,7 @@
                  <div clas="row">
                      <div class="col-md-8 col-xs-8 col-xl-8 col-lg-8">
                   <label class="checkbox-inline">
-                      <input type="checkbox"  checked id="botonPolideportivo" name="botonera"  value="botonRecogidaBici"  onchange="cambiaCapa(this,1)" data-toggle="toggle"/> Polideportivo
+                      <input type="checkbox"  checked id="botonPolideportivo" name="botonera"  value="botonRecogidaBici"  onchange="cambiaCapa(this,1)" data-toggle="toggle"/> Centros Deportivos/Zonas Verdes
                     </label><br/>
                 <label class="checkbox-inline">
                     <input type="checkbox"  id="botonCarrilesBici" name="botonera"  value="botonCarrilesBici" onchange="cambiaCapa(this,2)" data-toggle="toggle"/> Ciclismo
@@ -93,7 +93,7 @@
                     <input type="checkbox"  id="botonZonasMusculacion" name="botonera"  value="botonZonasMusculacion" onchange="cambiaCapa(this,3)" data-toggle="toggle"/> Musculacion
                 </label><br/>
                 <label class="checkbox-inline">
-                    <input type="checkbox" id="botonRuido" value="botonRuido"  name="botonera"  onchange="cambiaCapa(this,4)" data-toggle="toggle"/> Natacion/Playas
+                    <input type="checkbox" id="botonRuido" value="botonRuido"  name="botonera"  onchange="cambiaCapa(this,4)" data-toggle="toggle"/> Natacion/Playas/Voley
                 </label><br/>
                 <label class="checkbox-inline">
                     <input type="checkbox" id="botonZVerde" value="botonZVerde" name="botonera"  onchange="cambiaCapa(this,5)" data-toggle="toggle"/> Ruido

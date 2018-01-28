@@ -35,15 +35,15 @@
             border: solid;
         }
         #panelHorario{
-            width: 450px;        
+            width: 80%;        
             position: relative;
-            margin-left: 110px;
+            margin-left: 20%;
         }
         #panelHorario1{
-            width:170px;
+            width:120%;
         }
         #panelHorario2{
-            width:170px;
+            width:120%;
         }
         
         #panelUbicacion{
@@ -245,15 +245,15 @@ and (min-width : 1224px) {
             border: solid;
         }
         #panelHorario{
-            width: 450px;        
+            width: 80%;        
             position: relative;
-            margin-left: 110px;
+            margin-left: 20%;
         }
         #panelHorario1{
-            width:170px;
+            width:120%;
         }
         #panelHorario2{
-            width:170px;
+            width:120%;
         }
         
         #panelUbicacion{
@@ -316,15 +316,15 @@ and (min-width : 1824px) {
             border: solid;
         }
         #panelHorario{
-            width: 450px;        
+            width: 80%;        
             position: relative;
-            margin-left: 110px;
+            margin-left: 20%;
         }
         #panelHorario1{
-            width:170px;
+            width:120%;
         }
         #panelHorario2{
-            width:170px;
+            width:120%;
         }
         
         #panelUbicacion{

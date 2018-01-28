@@ -3,7 +3,7 @@
 */
 
 /* Smartphones (portrait and landscape) ----------- */
-#map {
+    #map {
         height: 80%;        
         width: 100%;
       }
@@ -107,15 +107,15 @@ and (max-device-width : 480px) {
             border: solid;
         }
         #panelHorario{
-            width: 450px;        
+            width: 80%;        
             position: relative;
-            margin-left: 110px;
+            margin-left: 20%;
         }
         #panelHorario1{
-            width:170px;
+            width:120%;
         }
         #panelHorario2{
-            width:170px;
+            width:120%;
         }
         
         #panelUbicacion{
@@ -181,15 +181,15 @@ and (max-device-width : 1024px) {
             border: solid;
         }
         #panelHorario{
-            width: 450px;        
+            width: 80%;        
             position: relative;
-            margin-left: 110px;
+            margin-left: 20%;
         }
         #panelHorario1{
-            width:170px;
+            width:120%;
         }
         #panelHorario2{
-            width:170px;
+            width:120%;
         }
         
         #panelUbicacion{

@@ -33,9 +33,7 @@
         <script src="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/TendenciaPeriodica.js"></script>
     
     <style>
-        .panel-title{
-            font-size: 60%;
-        }
+        
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       /*#map {
@@ -590,7 +588,7 @@
                      <div class="col-md-4 col-xs-4 col-lg-4 col-xl-4">
                          <div class="panel panel-default">
                             <div class="panel-heading">
-                                    <h4>Filtra por distancia a ti (Km)</h4> 
+                                    <h4 class="panel-title">Filtra por distancia a ti (Km)</h4> 
                             </div>
                              <div class="panel-body">
                                         <input id="filtradoKm" data-slider-id='ex1Slider' type="text" onchange="filtraKm(this.value)" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="20" style="display:none"/>               

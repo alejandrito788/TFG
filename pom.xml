@@ -209,7 +209,7 @@
                         <goals>
                             <goal>copy</goal>
                         </goals>
-                      <!--  <configuration>
+                      <configuration>
                             <outputDirectory>${endorsed.dir}</outputDirectory>
                             <silent>true</silent>
                             <artifactItems>
@@ -220,8 +220,8 @@
                                     <type>jar</type>
                                 </artifactItem>
                             </artifactItems>
-                        </configuration>-->
-                        <configuration>
+                        </configuration>
+                        <!--<configuration>
                           <artifactItems>
                             <artifactItem>
                               <groupId>com.github.jsimone</groupId>
@@ -230,7 +230,7 @@
                               <destFileName>webapp-runner.jar</destFileName>
                             </artifactItem>
                             </artifactItems>
-                        </configuration>
+                        </configuration>-->
                     </execution>
                 </executions>
             </plugin>

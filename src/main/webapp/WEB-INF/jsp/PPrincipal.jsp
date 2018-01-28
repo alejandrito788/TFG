@@ -33,12 +33,10 @@
         <script src="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/TendenciaPeriodica.js"></script>
     
     <style>
-        /*h1{
-        font-family: Vegur, Verdana, Sans-serif;
-        font-weight: 800;
-        font-size: 500%;
-        text-align: center;
-        }*/
+        #icono{
+            height: 50%;
+            width: 50%;
+        }
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       /*#map {

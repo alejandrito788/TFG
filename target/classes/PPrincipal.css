@@ -137,6 +137,9 @@ and (max-device-width : 480px) {
         .item{
            padding:50px;      
         }
+        .panel-title{
+            font-size: 120%;
+        }
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -207,6 +210,9 @@ and (max-device-width : 1024px) {
         }
         .item{
            padding:50px;      
+        }
+        .panel-title{
+            font-size: 120%;
         }
 }
 

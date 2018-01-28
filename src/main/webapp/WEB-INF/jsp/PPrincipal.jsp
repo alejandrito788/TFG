@@ -590,10 +590,11 @@
                             <div class="panel-heading">
                                     <h4 class="panel-title">Filtra por distancia a ti (Km)</h4> 
                             </div>
-                             <div class="panel-body">
+                         </div>
+                          
                                         <input id="filtradoKm" data-slider-id='ex1Slider' type="text" onchange="filtraKm(this.value)" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="20" style="display:none"/>               
-                             </div>
-                       </div>
+                            
+                       
                  </div>
                </div>
              </div>

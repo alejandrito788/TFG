@@ -124,8 +124,8 @@ and (max-device-width : 480px) {
             width: 50px;
         }
         #logo{
-            height:160%;
-            width:160%;
+            height:500%;
+            width:500%;
             left:150%;
             top:30px;
             padding: 5%;
@@ -195,8 +195,8 @@ and (max-device-width : 1024px) {
             width: 50px;
         }
         #logo{
-            height:160%;
-            width:160%;
+            height:300%;
+            width:300%;
             left:150%;
             top:30px;
             padding: 5%;

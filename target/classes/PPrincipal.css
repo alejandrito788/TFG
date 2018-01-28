@@ -35,35 +35,36 @@
             border: solid;
         }
         #panelHorario{
-            width: 450em;        
+            width: 450px;        
             position: relative;
-            margin-left: 110em;
+            margin-left: 110px;
         }
         #panelHorario1{
-            width:170em;
+            width:170px;
         }
         #panelHorario2{
-            width:170em;
+            width:170px;
         }
         
         #panelUbicacion{
-            width: 300em;
-            margin-left:10em;
+            width: 300px;
+            margin-left:10px;
+            position: relative;
         }
         #icono{
-            height: 50em;
-            width: 50em;
+            height: 50px;
+            width: 50px;
         }
         #logo{
-            height:80em;
-            width:80em;
-            left:150em;
-            top:30em;
-            padding: 5em;
-            position:absolute;
+            height:80px;
+            width:80px;
+            left:150px;
+            top:30px;
+            padding: 5px;
+            position:relative;
         }
         .item{
-           padding:50em;      
+           padding:50px;      
         }
 @media only screen 
 and (min-device-width : 320px) 

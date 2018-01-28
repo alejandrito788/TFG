@@ -94,7 +94,7 @@
 
     function ubicacionManual(){
             direccion = document.getElementById('direccionConcreta').value;
-            
+            miUbicacion.hide();
                 $.ajax({
                 type: 'GET',
                 url: ruta+'/mostrarMapa/'+direccion,

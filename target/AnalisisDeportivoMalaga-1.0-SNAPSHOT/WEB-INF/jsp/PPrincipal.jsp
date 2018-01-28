@@ -526,10 +526,10 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-1">
+            <div class="col-md-1 col-xs-1 col-lg-1 col-xl-1">
                 <img id="logo" src="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/logo.png"/>
             </div>
-            <div class="col-md-11">
+            <div class="col-md-11 col-xs-11 col-lg-11 col-xl-11">
                 <h1>2TRAIN<small>Ciudad de Málaga</small></h1>
             </div>
         </div>
@@ -567,7 +567,7 @@
         <div class="panel-body">
              <div class="container">
                  <div clas="row">
-                     <div class="col-md-8">
+                     <div class="col-md-8 col-xs-8 col-xl-8 col-lg-8">
                   <label class="checkbox-inline">
                       <input type="checkbox"  checked id="botonPolideportivo" name="botonera"  value="botonRecogidaBici"  onchange="cambiaCapa(this,1)" data-toggle="toggle"/> Polideportivo
                     </label><br/>
@@ -584,7 +584,7 @@
                     <input type="checkbox" id="botonZVerde" value="botonZVerde" name="botonera"  onchange="cambiaCapa(this,5)" data-toggle="toggle"/> Ruido
                 </label><br/>               
                      </div>
-                     <div class="col-md-4">
+                     <div class="col-md-4 col-xs-4 col-lg-4 col-xl-4">
                          <div class="panel panel-default">
                             <div class="panel-heading">
                                     <h4>Filtra por distancia a ti (Km)</h4> 
@@ -600,7 +600,7 @@
         </div>
           <div class="container">
               <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-6 col-xl-6 col-xs-6 col-lg-6">
         <div id="panelUbicacion" class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title">Modifica tu ubicacion manualmente</h3>
@@ -611,10 +611,10 @@
             <br/>
             <div class="container">
                 <div class="row">
-            <div class="col-md-1">
+            <div class="col-md-1 col-xs-1 col-lg-1 col-xl-1">
                 <image id="icono" src="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/peaton.png" style="display:none"/>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-xs-2 col-lg-2 col-xl-2">
             <div class="panel-body">
                 <input  type="text" id="direccionConcreta" value="C/..." style="display:none"/>
                 <button id="btnUbicacion" onclick="ubicacionManual()" value="add" style="display:none"/>Actualizar  <br/>              
@@ -626,7 +626,7 @@
             </div>
         </div>
         </div>
-         <div class="col-md-6">
+         <div class="col-md-6 col-xs-6 col-xl-6 col-lg-6">
          <div id="panelHorario" class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title"><span class="glyphicon glyphicon-time"></span>Horario</h3>
@@ -634,7 +634,7 @@
             <div class="panel-body">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-xl-2 col-xs-2 col-lg-2">
                 <div id="panelHorario1" class="panel panel-default">
                     <div class="panel-heading">
                         <h6 class="panel-title">Amanecer</h6>
@@ -644,7 +644,7 @@
                      </div>
                 </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-xl-2 col-xs-2 col-lg-2">
                 <div id="panelHorario2" class="panel panel-default">
                     <div class="panel-heading">
                         <h6 class="panel-title">Atardecer</h6>
@@ -685,12 +685,12 @@
                 <div class="panel-body">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-11">
+                            <div class="col-md-11 col-xs-11 col-lg-11 col-xl-11">
                                 <div class="progress">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" id="tendenciaProg" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>                        
                                 </div>
                             </div>
-                            <div class="col-md-1">
+                            <div class="col-md-1 col-xs-1 col-lg-1 col-xl-1">
                                     <button type="button" onclick="ayuda()" class="btn btn-info">
                                         <span class="glyphicon glyphicon-question-sign"></span> 
                                      </button>

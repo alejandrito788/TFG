@@ -29,41 +29,41 @@
         text-align: center;
         }
         .page-header{
-            background: lightblue url("http://3.bp.blogspot.com/-Ahb4YdtrgUg/T-UyP31pc5I/AAAAAAAAABs/8mjzvDAE4M8/s1600/cielo%20claro.JPG") no-repeat
+            background: lightblue url("https://rawgit.com/alejandrito788/TFG/master/src/main/resources/cielo%20claro.JPG") no-repeat
         }
         #map{
             border: solid;
         }
         #panelHorario{
-            width: 450px;        
+            width: 450em;        
             position: relative;
-            margin-left: 110px;
+            margin-left: 110em;
         }
         #panelHorario1{
-            width:170px;
+            width:170em;
         }
         #panelHorario2{
-            width:170px;
+            width:170em;
         }
         
         #panelUbicacion{
-            width: 300px;
-            margin-left:10px;
+            width: 300em;
+            margin-left:10em;
         }
         #icono{
-            height: 50px;
-            width: 50px;
+            height: 50em;
+            width: 50em;
         }
         #logo{
-            height:80px;
-            width:80px;
-            left:150px;
-            top:30px;
-            padding: 5px;
+            height:80em;
+            width:80em;
+            left:150em;
+            top:30em;
+            padding: 5em;
             position:absolute;
         }
         .item{
-           padding:50px;      
+           padding:50em;      
         }
 @media only screen 
 and (min-device-width : 320px) 
@@ -97,7 +97,7 @@ and (max-device-width : 480px) {
         text-align: center;
         }
         .page-header{
-            background: lightblue url("http://3.bp.blogspot.com/-Ahb4YdtrgUg/T-UyP31pc5I/AAAAAAAAABs/8mjzvDAE4M8/s1600/cielo%20claro.JPG") no-repeat
+            background: lightblue url("https://rawgit.com/alejandrito788/TFG/master/src/main/resources/cielo%20claro.JPG") no-repeat
         }
         #map{
             border: solid;
@@ -168,7 +168,7 @@ and (max-device-width : 1024px) {
         text-align: center;
         }
         .page-header{
-            background: lightblue url("http://3.bp.blogspot.com/-Ahb4YdtrgUg/T-UyP31pc5I/AAAAAAAAABs/8mjzvDAE4M8/s1600/cielo%20claro.JPG") no-repeat
+            background: lightblue url("https://rawgit.com/alejandrito788/TFG/master/src/main/resources/cielo%20claro.JPG") no-repeat
         }
         #map{
             border: solid;
@@ -238,7 +238,7 @@ and (min-width : 1224px) {
         text-align: center;
         }
         .page-header{
-            background: lightblue url("http://3.bp.blogspot.com/-Ahb4YdtrgUg/T-UyP31pc5I/AAAAAAAAABs/8mjzvDAE4M8/s1600/cielo%20claro.JPG") no-repeat
+            background: lightblue url("https://rawgit.com/alejandrito788/TFG/master/src/main/resources/cielo%20claro.JPG") no-repeat
         }
         #map{
             border: solid;

@@ -33,10 +33,7 @@
         <script src="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/TendenciaPeriodica.js"></script>
     
     <style>
-        #icono{
-            height: 50%;
-            width: 50%;
-        }
+
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       /*#map {

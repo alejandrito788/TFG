@@ -52,15 +52,15 @@
             position: relative;
         }
         #icono{
-            height: 50%;
-            width: 50%;
+            height: 50px;
+            width: 50px;
         }
         #logo{
-            height:80px;
-            width:80px;
-            left:150px;
+            height:160%;
+            width:160%;
+            left:150%;
             top:30px;
-            padding: 5px;
+            padding: 5%;
             position:relative;
         }
         .item{
@@ -124,12 +124,12 @@ and (max-device-width : 480px) {
             width: 50px;
         }
         #logo{
-            height:80px;
-            width:80px;
-            left:150px;
+            height:160%;
+            width:160%;
+            left:150%;
             top:30px;
-            padding: 5px;
-            position:absolute;
+            padding: 5%;
+            position:relative;
         }
         .item{
            padding:50px;      
@@ -195,12 +195,12 @@ and (max-device-width : 1024px) {
             width: 50px;
         }
         #logo{
-            height:80px;
-            width:80px;
-            left:150px;
+            height:160%;
+            width:160%;
+            left:150%;
             top:30px;
-            padding: 5px;
-            position:absolute;
+            padding: 5%;
+            position:relative;
         }
         .item{
            padding:50px;      
@@ -265,12 +265,12 @@ and (min-width : 1224px) {
             width: 50px;
         }
         #logo{
-            height:80px;
-            width:80px;
-            left:150px;
+            height:160%;
+            width:160%;
+            left:150%;
             top:30px;
-            padding: 5px;
-            position:absolute;
+            padding: 5%;
+            position:relative;
         }
         .item{
            padding:50px;      
@@ -336,12 +336,12 @@ and (min-width : 1824px) {
             width: 50px;
         }
         #logo{
-            height:80px;
-            width:80px;
-            left:150px;
+            height:160%;
+            width:160%;
+            left:150%;
             top:30px;
-            padding: 5px;
-            position:absolute;
+            padding: 5%;
+            position:relative;
         }
         .item{
            padding:50px;      

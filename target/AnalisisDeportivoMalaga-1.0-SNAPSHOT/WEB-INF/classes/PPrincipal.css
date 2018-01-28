@@ -71,7 +71,7 @@ and (max-device-width : 480px) {
 /* Styles */
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-      #map {
+     #map {
         height: 80%;        
         width: 100%;
       }
@@ -103,35 +103,35 @@ and (max-device-width : 480px) {
             border: solid;
         }
         #panelHorario{
-            width: 450px;        
+            width: 450em;        
             position: relative;
-            margin-left: 110px;
+            margin-left: 110em;
         }
         #panelHorario1{
-            width:170px;
+            width:170em;
         }
         #panelHorario2{
-            width:170px;
+            width:170em;
         }
         
         #panelUbicacion{
-            width: 300px;
-            margin-left:10px;
+            width: 300em;
+            margin-left:10em;
         }
         #icono{
-            height: 50px;
-            width: 50px;
+            height: 50em;
+            width: 50em;
         }
         #logo{
-            height:80px;
-            width:80px;
-            left:150px;
-            top:30px;
-            padding: 5px;
+            height:80em;
+            width:80em;
+            left:150em;
+            top:30em;
+            padding: 5em;
             position:absolute;
         }
         .item{
-           padding:50px;      
+           padding:50em;      
         }
 }
 
@@ -174,35 +174,35 @@ and (max-device-width : 1024px) {
             border: solid;
         }
         #panelHorario{
-            width: 450px;        
+            width: 450em;        
             position: relative;
-            margin-left: 110px;
+            margin-left: 110em;
         }
         #panelHorario1{
-            width:170px;
+            width:170em;
         }
         #panelHorario2{
-            width:170px;
+            width:170em;
         }
         
         #panelUbicacion{
-            width: 300px;
-            margin-left:10px;
+            width: 300em;
+            margin-left:10em;
         }
         #icono{
-            height: 50px;
-            width: 50px;
+            height: 50em;
+            width: 50em;
         }
         #logo{
-            height:80px;
-            width:80px;
-            left:150px;
-            top:30px;
-            padding: 5px;
+            height:80em;
+            width:80em;
+            left:150em;
+            top:30em;
+            padding: 5em;
             position:absolute;
         }
         .item{
-           padding:50px;      
+           padding:50em;      
         }
 }
 
@@ -244,35 +244,35 @@ and (min-width : 1224px) {
             border: solid;
         }
         #panelHorario{
-            width: 450px;        
+            width: 450em;        
             position: relative;
-            margin-left: 110px;
+            margin-left: 110em;
         }
         #panelHorario1{
-            width:170px;
+            width:170em;
         }
         #panelHorario2{
-            width:170px;
+            width:170em;
         }
         
         #panelUbicacion{
-            width: 300px;
-            margin-left:10px;
+            width: 300em;
+            margin-left:10em;
         }
         #icono{
-            height: 50px;
-            width: 50px;
+            height: 50em;
+            width: 50em;
         }
         #logo{
-            height:80px;
-            width:80px;
-            left:150px;
-            top:30px;
-            padding: 5px;
+            height:80em;
+            width:80em;
+            left:150em;
+            top:30em;
+            padding: 5em;
             position:absolute;
         }
         .item{
-           padding:50px;      
+           padding:50em;      
         }
 
 }
@@ -309,40 +309,40 @@ and (min-width : 1824px) {
         text-align: center;
         }
         .page-header{
-            background: lightblue url("http://3.bp.blogspot.com/-Ahb4YdtrgUg/T-UyP31pc5I/AAAAAAAAABs/8mjzvDAE4M8/s1600/cielo%20claro.JPG") no-repeat
+            background: lightblue url("https://rawgit.com/alejandrito788/TFG/master/src/main/resources/cielo%20claro.JPG") no-repeat
         }
         #map{
             border: solid;
         }
         #panelHorario{
-            width: 450px;        
+            width: 450em;        
             position: relative;
-            margin-left: 110px;
+            margin-left: 110em;
         }
         #panelHorario1{
-            width:170px;
+            width:170em;
         }
         #panelHorario2{
-            width:170px;
+            width:170em;
         }
         
         #panelUbicacion{
-            width: 300px;
-            margin-left:10px;
+            width: 300em;
+            margin-left:10em;
         }
         #icono{
-            height: 50px;
-            width: 50px;
+            height: 50em;
+            width: 50em;
         }
         #logo{
-            height:80px;
-            width:80px;
-            left:150px;
-            top:30px;
-            padding: 5px;
+            height:80em;
+            width:80em;
+            left:150em;
+            top:30em;
+            padding: 5em;
             position:absolute;
         }
         .item{
-           padding:50px;      
+           padding:50em;      
         }
 }

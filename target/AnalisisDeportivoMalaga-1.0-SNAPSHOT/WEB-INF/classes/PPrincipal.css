@@ -165,7 +165,7 @@ and (max-device-width : 1024px) {
       h1{
         font-family: Vegur, Verdana, Sans-serif;
         font-weight: 800;
-        font-size: 50%;
+        font-size: 200%;
         text-align: center;
         }
         .page-header{
@@ -306,7 +306,7 @@ and (min-width : 1824px) {
       h1{
         font-family: Vegur, Verdana, Sans-serif;
         font-weight: 800;
-        font-size: 50%;
+        font-size: 500%;
         text-align: center;
         }
         .page-header{

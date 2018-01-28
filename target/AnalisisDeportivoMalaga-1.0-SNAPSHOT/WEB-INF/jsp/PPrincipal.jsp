@@ -598,6 +598,7 @@
              </div>
          </div>
         </div>
+        <div class="panel panel-default">
           <div class="container">
               <div class="row">
                   <div class="col-md-6 col-xl-6 col-xs-6 col-lg-6">
@@ -661,6 +662,7 @@
               </div>
               </div>
           </div>
+        </div>
          <div id="panelCEP" class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title">Tendencia deportiva</h3>

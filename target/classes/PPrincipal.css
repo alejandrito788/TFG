@@ -103,35 +103,35 @@ and (max-device-width : 480px) {
             border: solid;
         }
         #panelHorario{
-            width: 450em;        
+            width: 450px;        
             position: relative;
-            margin-left: 110em;
+            margin-left: 110px;
         }
         #panelHorario1{
-            width:170em;
+            width:170px;
         }
         #panelHorario2{
-            width:170em;
+            width:170px;
         }
         
         #panelUbicacion{
-            width: 300em;
-            margin-left:10em;
+            width: 300px;
+            margin-left:10px;
         }
         #icono{
-            height: 50em;
-            width: 50em;
+            height: 50px;
+            width: 50px;
         }
         #logo{
-            height:80em;
-            width:80em;
-            left:150em;
-            top:30em;
-            padding: 5em;
+            height:80px;
+            width:80px;
+            left:150px;
+            top:30px;
+            padding: 5px;
             position:absolute;
         }
         .item{
-           padding:50em;      
+           padding:50px;      
         }
 }
 
@@ -174,35 +174,35 @@ and (max-device-width : 1024px) {
             border: solid;
         }
         #panelHorario{
-            width: 450em;        
+            width: 450px;        
             position: relative;
-            margin-left: 110em;
+            margin-left: 110px;
         }
         #panelHorario1{
-            width:170em;
+            width:170px;
         }
         #panelHorario2{
-            width:170em;
+            width:170px;
         }
         
         #panelUbicacion{
-            width: 300em;
-            margin-left:10em;
+            width: 300px;
+            margin-left:10px;
         }
         #icono{
-            height: 50em;
-            width: 50em;
+            height: 50px;
+            width: 50px;
         }
         #logo{
-            height:80em;
-            width:80em;
-            left:150em;
-            top:30em;
-            padding: 5em;
+            height:80px;
+            width:80px;
+            left:150px;
+            top:30px;
+            padding: 5px;
             position:absolute;
         }
         .item{
-           padding:50em;      
+           padding:50px;      
         }
 }
 
@@ -212,7 +212,7 @@ and (max-device-width : 1024px) {
 and (min-width : 1224px) {
           /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-      #map {
+       #map {
         height: 80%;        
         width: 100%;
       }
@@ -244,35 +244,35 @@ and (min-width : 1224px) {
             border: solid;
         }
         #panelHorario{
-            width: 450em;        
+            width: 450px;        
             position: relative;
-            margin-left: 110em;
+            margin-left: 110px;
         }
         #panelHorario1{
-            width:170em;
+            width:170px;
         }
         #panelHorario2{
-            width:170em;
+            width:170px;
         }
         
         #panelUbicacion{
-            width: 300em;
-            margin-left:10em;
+            width: 300px;
+            margin-left:10px;
         }
         #icono{
-            height: 50em;
-            width: 50em;
+            height: 50px;
+            width: 50px;
         }
         #logo{
-            height:80em;
-            width:80em;
-            left:150em;
-            top:30em;
-            padding: 5em;
+            height:80px;
+            width:80px;
+            left:150px;
+            top:30px;
+            padding: 5px;
             position:absolute;
         }
         .item{
-           padding:50em;      
+           padding:50px;      
         }
 
 }
@@ -283,7 +283,7 @@ and (min-width : 1824px) {
 /* Styles */
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-      #map {
+       #map {
         height: 80%;        
         width: 100%;
       }
@@ -315,34 +315,34 @@ and (min-width : 1824px) {
             border: solid;
         }
         #panelHorario{
-            width: 450em;        
+            width: 450px;        
             position: relative;
-            margin-left: 110em;
+            margin-left: 110px;
         }
         #panelHorario1{
-            width:170em;
+            width:170px;
         }
         #panelHorario2{
-            width:170em;
+            width:170px;
         }
         
         #panelUbicacion{
-            width: 300em;
-            margin-left:10em;
+            width: 300px;
+            margin-left:10px;
         }
         #icono{
-            height: 50em;
-            width: 50em;
+            height: 50px;
+            width: 50px;
         }
         #logo{
-            height:80em;
-            width:80em;
-            left:150em;
-            top:30em;
-            padding: 5em;
+            height:80px;
+            width:80px;
+            left:150px;
+            top:30px;
+            padding: 5px;
             position:absolute;
         }
         .item{
-           padding:50em;      
+           padding:50px;      
         }
 }

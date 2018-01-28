@@ -221,7 +221,7 @@
                                 </artifactItem>
                             </artifactItems>
                         </configuration>
-                        <!--<configuration>
+                      <!--  <configuration>
                           <artifactItems>
                             <artifactItem>
                               <groupId>com.github.jsimone</groupId>

@@ -131,13 +131,15 @@
         }        
 
         function filtraKm(val){ //distancia requerida en km
-            coorY = document.getElementById('miLng').value;
-            coorX = document.getElementById('miLat').value;
-        
+         coorY = document.getElementById('miLng').value;
+         coorX = document.getElementById('miLat').value;
+         if(val>0){
             $.ajax({
                 type: 'GET',
                 url: 'https://alejandroruiz3cstudent.carto.com/api/v2/sql?q=SELECT cartodb_id, ST_Distance(the_geom::geography, ST_SetSRID(ST_Point('+coorY+','+ coorX+'),4326)::geography) as area FROM centrosdeportivos',
                 success: function(result){  //devuelve el resultado con la distancia en metros
+                    
+                    if(result.total_rows>0){
                     var lista = formaConsulta(result,val);
                    
                     if(piscinas===1){
@@ -149,9 +151,14 @@
                     }else{
                         alert('Centros deportivos no visibles');
                     }
+                }else{
+                    alert('No hay centros deportivos cercanos');
+                }
                 }
             });
-        
+         }else{
+             alert('Usa una distancia mayor que cero');
+         }
 
         }
         

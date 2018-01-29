@@ -209,7 +209,7 @@
                                 </div>
                             </div>
                             <div class="col-md-1 col-xs-1 col-lg-1 col-xl-1">
-                                    <button type="button" onclick="ayuda(${pageContext.request.contextPath})" class="btn btn-info">
+                                    <button type="button" onclick="ayuda()" class="btn btn-info">
                                         <span class="glyphicon glyphicon-question-sign"></span> 
                                      </button>
                             </div>

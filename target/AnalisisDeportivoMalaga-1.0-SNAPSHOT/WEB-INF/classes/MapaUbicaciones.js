@@ -99,7 +99,8 @@
                 $.ajax({
                 type: 'GET',
                 url: ruta+'mostrarMapa/'+direccion,
-                success: function(result){                   
+                success: function(res){      
+                    var result = res.split(";");
                     $('#miLat').val(result[0]);
                     $('#miLng').val(result[1]);
                     marcarPunto();

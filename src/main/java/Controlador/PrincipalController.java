@@ -57,9 +57,9 @@ public class PrincipalController {
             
            String[] aux=addUbicacion(direccion);
            Mapping.setLatGen(aux[0]);
-           Mapping.setLngGen(aux[0]);
-           return "hola";
-           //return aux;
+           Mapping.setLngGen(aux[1]);
+           
+           return aux[0]+";"+aux[1];
     }
      
     @RequestMapping(value="miTendencia/{deporte}", method=RequestMethod.POST)

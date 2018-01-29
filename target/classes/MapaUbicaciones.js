@@ -17,15 +17,22 @@
             //var ruta = 'http://localhost:8080/AnalisisDeportivoMalaga';
     function cambiaCapa(obj,i){
             
-            if(obj.checked){
+        if(obj.checked){
+          filtrakm = document.getElementById('filtradoKm');         //por si tiene que mantener filtrado
+
               switch (i){
                   case 1:     //centros deportivos + zonas verdes 
-                    if(piscinas===0 && musculacion===0){
-                        capas[2].setSQL("SELECT * FROM centrosdeportivos");
-                        capas[2].show();  
-                    }
+                      centrosdeportivos=1;
+                      
+                      if(piscinas===0 && musculacion===0){       
+                        capas[2].show();   
+                        if(filtrakm.value<20){                           
+                          filtraKm(filtrakm.value);
+                        }else{
+                            capas[2].setSQL("SELECT * FROM centrosdeportivos");
+                        }
+                       }                   
                     capas[4].show();
-                    centrosdeportivos=1;
                     break;
                 case 2:     //estacionamientos bici + carriles bici
                     capas[0].show();
@@ -33,20 +40,29 @@
                     break;
                 case 3:     //musculacion
                     capas[2].show();
-                    capas[2].setSQL("SELECT * FROM centrosdeportivos WHERE nombre LIKE 'ZONA DE%' OR nombre LIKE 'GIM%'");
                     musculacion=1;
-                    break;
+                    if(filtrakm.value<20){                           
+                          filtraKm(filtrakm.value);
+                    }else{
+                        capas[2].setSQL("SELECT * FROM centrosdeportivos WHERE nombre LIKE 'ZONA DE%' OR nombre LIKE 'GIM%'");
+                    }
+                        break;
                 case 4:     //piscinas + playas accesibles + voley
+                    piscinas=1;
                     capas[5].show();
                     capas[6].show();
                     capas[2].show();
-                    capas[2].setSQL("SELECT * FROM centrosdeportivos WHERE nombre_ins LIKE 'PISCINA%'");
-                    piscinas=1;
+                    if(filtrakm.value<20){                           
+                          filtraKm(filtrakm.value);
+                    }else{
+                        capas[2].setSQL("SELECT * FROM centrosdeportivos WHERE nombre_ins LIKE 'PISCINA%'");
+                    }                       
                     break;
                 case 5:     //ruido
                     capas[3].show();  
                     break;
               }
+           
           }else{
               switch (i){
                   case 1:     //centros deportivos + zonas verdes 
@@ -133,10 +149,13 @@
                     return lista;
         }        
 
+        var haSalido=false;         //controla que en caso de error se muestre un solo mensaje
         function filtraKm(val){ //distancia requerida en km
          coorY = document.getElementById('miLng').value;
          coorX = document.getElementById('miLat').value;
          if(val>0){
+             haSalido=false;
+             
             $.ajax({
                 type: 'GET',
                 url: 'https://alejandroruiz3cstudent.carto.com/api/v2/sql?q=SELECT cartodb_id, ST_Distance(the_geom::geography, ST_SetSRID(ST_Point('+coorY+','+ coorX+'),4326)::geography) as area FROM centrosdeportivos',
@@ -158,7 +177,10 @@
                     existen=false;
                     
                 }else{
-                    alert('No hay centros deportivos cercanos');
+                    if(haSalido===false){
+                        alert('No hay centros deportivos cercanos. Modifique su ubicacion.');
+                        haSalido===true;
+                    }
                 }
                 }
             });

@@ -53,13 +53,13 @@ public class PrincipalController {
     
     @RequestMapping(value="mostrarMapa/{direccion}", method=RequestMethod.GET)
     @ResponseBody
-    public String[] mostrarMapa(@PathVariable("direccion") String direccion) {
+    public String/*[]*/ mostrarMapa(@PathVariable("direccion") String direccion) {
             
            String[] aux=addUbicacion(direccion);
            Mapping.setLatGen(aux[0]);
            Mapping.setLngGen(aux[0]);
-           
-           return aux;
+           return "hola";
+           //return aux;
     }
      
     @RequestMapping(value="miTendencia/{deporte}", method=RequestMethod.POST)

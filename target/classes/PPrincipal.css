@@ -70,8 +70,8 @@
             font-size: 80%;
         }
 @media only screen 
-and (min-device-width : 250px) 
-and (max-device-width : 500px) {
+and (min-device-width : 150px) 
+and (max-device-width : 450px) {
 /* Styles */
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -145,7 +145,7 @@ and (max-device-width : 500px) {
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen 
-and (min-device-width : 768px) 
+and (min-device-width : 450px) 
 and (max-device-width : 1024px) {
 /* Styles */
       /* Always set the map height explicitly to define the size of the div

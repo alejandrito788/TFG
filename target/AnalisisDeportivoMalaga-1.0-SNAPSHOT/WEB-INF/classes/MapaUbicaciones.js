@@ -13,7 +13,8 @@
             var centrosdeportivos = 1; //esta mostrandose
             var piscinas=0;
             var musculacion=0;
-            var ruta = 'http://localhost:8080/AnalisisDeportivoMalaga';
+            var ruta = 'https://protected-reef-73935.herokuapp.com';
+            //var ruta = 'http://localhost:8080/AnalisisDeportivoMalaga';
     function cambiaCapa(obj,i){
             
             if(obj.checked){
@@ -218,7 +219,7 @@
             }
 
         function iniciaMapa(){
-            vizJson = 'http://alejandroruiz3cstudent.carto.com/api/v2/viz/59be2c0c-39a4-4c98-b28e-153f01fd531e/viz.json';
+            vizJson = 'https://alejandroruiz3cstudent.carto.com/api/v2/viz/59be2c0c-39a4-4c98-b28e-153f01fd531e/viz.json';
               cartodb.createVis('map', vizJson).done(function(vis, layers) {
                 map = L.map('map');
                 cartoMap=vis;

@@ -8,7 +8,8 @@
         var deporteActivo = "list-group-item active";
         var seleccionados = ["No", "No", "No","No"];
         var opera=0;    //Marca si el procesamiento esta operando o detenido
-        var ruta='http://localhost:8080/AnalisisDeportivoMalaga';
+        var ruta = 'https://protected-reef-73935.herokuapp.com';
+        //var ruta='http://localhost:8080/AnalisisDeportivoMalaga';
 
         function iniciaDeporteSeleccionado(){
             deporte = document.getElementById('deporteConcreto').value;

@@ -90,9 +90,17 @@
                     break;
                 case 3:     //musculacion
                     if(piscinas===1){
-                        capas[2].setSQL("SELECT * FROM centrosdeportivos WHERE nombre_ins LIKE 'PISCINA%'");
+                        if(filtrakm.value<20){                           
+                          filtraKm(filtrakm.value);
+                        }else{
+                            capas[2].setSQL("SELECT * FROM centrosdeportivos WHERE nombre_ins LIKE 'PISCINA%'");
+                        }
                     }else if(centrosdeportivos===1){
-                        capas[2].setSQL("SELECT * FROM centrosdeportivos");
+                        if(filtrakm.value<20){                           
+                          filtraKm(filtrakm.value);
+                        }else{
+                            capas[2].setSQL("SELECT * FROM centrosdeportivos");
+                        }
                     }else{
                         capas[2].hide();
                     }
@@ -100,9 +108,17 @@
                     break;
                 case 4:     //piscinas + playas accesibles + voley
                     if(musculacion===1){
-                        capas[2].setSQL("SELECT * FROM centrosdeportivos WHERE nombre LIKE 'ZONA DE%' OR nombre LIKE 'GIM%'");
+                        if(filtrakm.value<20){                           
+                          filtraKm(filtrakm.value);
+                        }else{
+                            capas[2].setSQL("SELECT * FROM centrosdeportivos WHERE nombre LIKE 'ZONA DE%' OR nombre LIKE 'GIM%'");
+                        }
                     }else if(centrosdeportivos===1){
+                        if(filtrakm.value<20){                           
+                          filtraKm(filtrakm.value);
+                        }else{
                         capas[2].setSQL("SELECT * FROM centrosdeportivos");
+                    }
                     }else{
                         capas[2].hide();
                     }
@@ -138,6 +154,7 @@
         }
         
         var existen=false;
+        var apareceUnaVez=false;
         function formaConsulta(result,val){
             var primero=true;
             
@@ -145,6 +162,7 @@
                     for(i=0;i<result.total_rows;i++){                       
                         if(result.rows[i].area/1000<=val){
                             existen=true;
+                            
                             if(primero){
                                 lista+=result.rows[i].cartodb_id;
                                 primero=false;
@@ -171,7 +189,7 @@
                     
                     var lista = formaConsulta(result,val);
                    if(existen===true){
-                   
+                       apareceUnaVez=false;
                     if(piscinas===1){
                         capas[2].setSQL("SELECT * FROM centrosdeportivos WHERE (nombre_ins LIKE 'PISCINA%') AND (cartodb_id IN"+lista+")");
                     }else if(musculacion===1){
@@ -183,10 +201,12 @@
                     }
                     existen=false;
                     
-                }else{
-                        alert('No hay centros deportivos cercanos. Modifique su ubicacion.');
-
-                 }
+                    }else{
+                        if(apareceUnaVez===false){
+                            alert('No hay centros deportivos cercanos. Modifique su ubicacion.');
+                            apareceUnaVez=true;
+                        }
+                    }
              }
             });
          }else{

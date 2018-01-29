@@ -67,10 +67,18 @@
               switch (i){
                   case 1:     //centros deportivos + zonas verdes 
                     if(piscinas===1){
-                        capas[2].setSQL("SELECT * FROM centrosdeportivos WHERE nombre_ins LIKE 'PISCINA%'");
+                        if(filtrakm.value<20){                           
+                          filtraKm(filtrakm.value);
+                        }else{
+                            capas[2].setSQL("SELECT * FROM centrosdeportivos WHERE nombre_ins LIKE 'PISCINA%'");
+                        }
                     }else if(musculacion===1){
-                        capas[2].setSQL("SELECT * FROM centrosdeportivos WHERE nombre LIKE 'ZONA DE%' OR nombre LIKE 'GIM%'");
-                    }else{
+                        if(filtrakm.value<20){                           
+                          filtraKm(filtrakm.value);
+                        }else{
+                            capas[2].setSQL("SELECT * FROM centrosdeportivos WHERE nombre LIKE 'ZONA DE%' OR nombre LIKE 'GIM%'");
+                        }
+                        }else{
                         capas[2].hide();                 
                     }
                     capas[4].hide();
@@ -149,12 +157,11 @@
                     return lista;
         }        
 
-        var haSalido=false;         //controla que en caso de error se muestre un solo mensaje
+             
         function filtraKm(val){ //distancia requerida en km
          coorY = document.getElementById('miLng').value;
          coorX = document.getElementById('miLat').value;
          if(val>0){
-             haSalido=false;
              
             $.ajax({
                 type: 'GET',
@@ -177,12 +184,10 @@
                     existen=false;
                     
                 }else{
-                    if(haSalido===false){
                         alert('No hay centros deportivos cercanos. Modifique su ubicacion.');
-                        haSalido===true;
-                    }
-                }
-                }
+
+                 }
+             }
             });
          }else{
              alert('Usa una distancia mayor que cero');

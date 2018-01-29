@@ -113,16 +113,19 @@
             
         }
         
+        var existen=false;
         function formaConsulta(result,val){
             var primero=true;
+            
                     var lista = "(";
                     for(i=0;i<result.total_rows;i++){                       
                         if(result.rows[i].area/1000<=val){
+                            existen=true;
                             if(primero){
                                 lista+=result.rows[i].cartodb_id;
                                 primero=false;
                             }else{
-                                lista+=","+result.rows[i].cartodb_id;
+                                lista+=","+result.rows[i].cartodb_id;                               
                             }
                         }
                     }
@@ -139,8 +142,9 @@
                 url: 'https://alejandroruiz3cstudent.carto.com/api/v2/sql?q=SELECT cartodb_id, ST_Distance(the_geom::geography, ST_SetSRID(ST_Point('+coorY+','+ coorX+'),4326)::geography) as area FROM centrosdeportivos',
                 success: function(result){  //devuelve el resultado con la distancia en metros
                     
-                    if(result.total_rows>0){
+                    
                     var lista = formaConsulta(result,val);
+                   if(existen===true){
                    
                     if(piscinas===1){
                         capas[2].setSQL("SELECT * FROM centrosdeportivos WHERE (nombre_ins LIKE 'PISCINA%') AND (cartodb_id IN"+lista+")");
@@ -151,6 +155,8 @@
                     }else{
                         alert('Centros deportivos no visibles');
                     }
+                    existen=false;
+                    
                 }else{
                     alert('No hay centros deportivos cercanos');
                 }

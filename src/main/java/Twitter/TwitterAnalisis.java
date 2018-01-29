@@ -113,6 +113,7 @@ public class TwitterAnalisis extends Thread {
     public void run(){
         Timestamp tiempo = new Timestamp(1);
         int aumento=0;
+        int numTweets=100;
         List<String> deporteAnterior=new ArrayList();
         while(true){
 
@@ -132,9 +133,9 @@ public class TwitterAnalisis extends Thread {
                 
                 GeoLocation localizacion = new GeoLocation(Double.parseDouble(Mapping.getLatGen()),Double.parseDouble(Mapping.getLngGen()));
                 query.setGeoCode(localizacion, RADIO, Query.Unit.km);
-                query.setCount(100);                                     //Cada peticion obtiene 100 tweets
+                query.setCount(100);                                     //Cada peticion obtiene 100 tweets o menos si no hay mas esperando
                 QueryResult result = twitter.search(query);             //flujo tweets segun ubicacion usuario
-                
+                numTweets=query.getCount();
                 aumento++;
                 tiempo.setTime(tiempo.getTime()+1);
 
@@ -162,7 +163,7 @@ public class TwitterAnalisis extends Thread {
                     for(int i=0;i<(numDeporte.length-(numDeporte.length/2));i++){                       
                         tendencia+=numDeporte[i];
                     }
-                    tendencia=(int) ((int) tendencia*FACTOR/tiempo.getTime());
+                    tendencia=(int) ((int) tendencia/tiempo.getTime())*FACTOR;
                 }
                     
                 Mapping.setTendencia(tendencia);              
@@ -171,6 +172,10 @@ public class TwitterAnalisis extends Thread {
                 coincidencia=false;
                 preparaContadores(numDeporte);
                 query.setSinceId(query.getSinceId()+100);
+                
+                if(numTweets<70){                           //avisara de que empieza a no ser significativo
+                    Mapping.setNumeroTweets(numTweets); 
+                }
               
                 this.sleep(TIEMPO);
                

@@ -44,9 +44,15 @@
             $.ajax({
                 type: 'GET',
                 url: ruta+'/actualizaTendencia',
-                success: function(result){                   
-                    $('#numTendencia').val(result);
+                success: function(res){
+                    var result=res.split(";");
+                    $('#numTendencia').val(result[0]);
                     iniciaBarraSeleccion();
+                    
+                    if(parseInt(result[1])<70){
+                        alert('Analisis poco significativo. Poco trafico en Twitter\n\
+                                Por favor, intentelo mas tarde');
+                    }
                 }
             });
                                  

@@ -45,8 +45,9 @@ public class PrincipalController {
     @ResponseBody
     public String actualizaTendencia() {
             Integer tendencia = Mapping.getTendenciaGeneral();
+            Integer numTweets = Mapping.getNumeroTweets();
             
-            return tendencia.toString();
+            return tendencia.toString()+";"+numTweets.toString();
     }
     
     

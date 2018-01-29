@@ -21,19 +21,22 @@ public class Mapping {
     private static final String coordenadasWS1 = "https://maps.googleapis.com/maps/api/geocode/json?address=";
     private static final String coordenadasWS2 = "&key=AIzaSyAqiLdrJbjNt9DpCmxAIgsIVen_0EF-5hI";
     
-    private static List<String> deporteGenerico;
+    private static List<String> deporteGenerico;        //deportes seleccionados
     private static String latGen;
     private static String lngGen;
-    private static int tendenciaGeneral;
-    private static Boolean condicion;
+    private static int tendenciaGeneral;                //tendencia a plasmar en pantalla
+    private static Boolean condicion;                   //analisis operando o detenido
+    private static int numeroTweets;                    //indicara si lo recogido no es indicativo
     
     private static final Lock mutex1=new ReentrantLock();      //para garantizar exclusion mutua en hebras
     private static final Lock mutex2=new ReentrantLock();
     private static final Lock mutex3=new ReentrantLock();
     private static final Lock mutex4=new ReentrantLock();
+    private static final Lock mutex5=new ReentrantLock();
     
     private Mapping(){
         condicion=false;
+        numeroTweets=300;                  //300 x mn es lo esperado
         tendenciaGeneral=0;
         latGen=latMalaga.toString();       //por defecto
         lngGen=lngMalaga.toString();
@@ -148,6 +151,20 @@ public class Mapping {
             if(condicion){
                 mutex4.notify();
             }
+        }
+        
+        
+    }
+
+    public static int getNumeroTweets() {
+        synchronized(mutex5){
+            return numeroTweets;
+        }
+    }
+
+    public static void setNumeroTweets(int numeroTweets) {
+        synchronized(mutex5){
+            Mapping.numeroTweets = numeroTweets;
         }
     }
  

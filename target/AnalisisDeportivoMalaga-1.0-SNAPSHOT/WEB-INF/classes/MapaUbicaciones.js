@@ -287,7 +287,7 @@
                 layers[1].getSubLayer(7).hide();
          
                 capas = [layers[1].getSubLayer(1),layers[1].getSubLayer(2),layers[1].getSubLayer(3),
-                         layers[1].getSubLayer(4),layers[1].getSubLayer(0),layers[1].getSubLayer(5),
+                         layers[1].getSubLayer(0),layers[1].getSubLayer(4),layers[1].getSubLayer(5),
                           layers[1].getSubLayer(7)];
                 
                 miUbicacion = layers[1].getSubLayer(6);

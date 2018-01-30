@@ -282,7 +282,7 @@
                 cartoMap=vis;
                 layerPrincipal=layers[1];
                 layers[1].getSubLayer(0).hide();layers[1].getSubLayer(1).hide();
-                layers[1].getSubLayer(3).hide();
+                layers[1].getSubLayer(2).hide();
                 layers[1].getSubLayer(5).hide();layers[1].getSubLayer(6).hide();
                 layers[1].getSubLayer(7).hide();
          

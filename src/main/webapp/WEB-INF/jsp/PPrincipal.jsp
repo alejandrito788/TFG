@@ -106,7 +106,7 @@
                             </div>
                          </div>
                           
-                                        <input id="filtradoKm" data-slider-id='ex1Slider' type="text" onchange="filtraKm(this.value)" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="20" style="display:none"/>               
+                                        <input id="filtradoKm" data-slider-id='ex1Slider' type="text" onchange="filtraKm(this.value)" data-slider-min="1" data-slider-max="20" data-slider-step="1" data-slider-value="20" style="display:none"/>               
                             
                        
                  </div>

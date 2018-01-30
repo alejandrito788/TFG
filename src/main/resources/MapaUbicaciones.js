@@ -179,7 +179,6 @@
         function filtraKm(val){ //distancia requerida en km
          coorY = document.getElementById('miLng').value;
          coorX = document.getElementById('miLat').value;
-         if(val>0){
              
             $.ajax({
                 type: 'GET',
@@ -188,7 +187,7 @@
                     
                     
                     var lista = formaConsulta(result,val);
-                   if(existen===true){
+                 if(existen===true){
                        apareceUnaVez=false;
                     if(piscinas===1){
                         capas[2].setSQL("SELECT * FROM centrosdeportivos WHERE (nombre_ins LIKE 'PISCINA%') AND (cartodb_id IN"+lista+")");
@@ -201,7 +200,7 @@
                     }
                     existen=false;
                     
-                    }else{
+                  }else{
                         if(apareceUnaVez===false){
                             alert('No hay centros deportivos cercanos. Modifique su ubicacion.');
                             apareceUnaVez=true;
@@ -209,9 +208,6 @@
                     }
              }
             });
-         }else{
-             alert('Usa una distancia mayor que cero');
-         }
 
         }
         
@@ -290,8 +286,8 @@
                 layers[1].getSubLayer(5).hide();layers[1].getSubLayer(6).hide();
                 layers[1].getSubLayer(7).hide();
          
-                capas = [layers[1].getSubLayer(0),layers[1].getSubLayer(1),layers[1].getSubLayer(2),
-                         layers[1].getSubLayer(3),layers[1].getSubLayer(4),layers[1].getSubLayer(5),
+                capas = [layers[1].getSubLayer(1),layers[1].getSubLayer(2),layers[1].getSubLayer(3),
+                         layers[1].getSubLayer(4),layers[1].getSubLayer(0),layers[1].getSubLayer(5),
                           layers[1].getSubLayer(7)];
                 
                 miUbicacion = layers[1].getSubLayer(6);

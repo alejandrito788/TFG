@@ -20,9 +20,11 @@
         <!--bootstrap -->
         <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
         <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
-        <link href="https://seiyria.github.io/bootstrap-slider/css/bootstrap-slider.css" rel="stylesheet">
+        <!--<link href="https://seiyria.github.io/bootstrap-slider/css/bootstrap-slider.css" rel="stylesheet">-->
+        <link href="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/slider.css" rel="stylesheet">
         <script src="https://seiyria.github.io/bootstrap-slider/js/bootstrap-slider.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">     
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
+        
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
         <!-- css-->
@@ -35,9 +37,6 @@
     </head>
 
     <body>
-        <script>       
-          /* ${pageContext.request.contextPath} CDN CONTROLADOR https://rawgit.com/alejandrito788/TFG/master/src/main/java/Controlador/PrincipalController.java*/
-</script>
 
     <div class="container">
         <div class="row">

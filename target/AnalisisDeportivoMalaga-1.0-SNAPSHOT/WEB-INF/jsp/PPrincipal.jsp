@@ -224,7 +224,7 @@
                                      <h6 class="panel-title">Personas pensando en tus deportes seleccionados(%)</h6>
                                  </div>
                                     <div class="panel-body">
-                                        <label id="numTweets" value=""/>
+                                        <label id="numTweets" value="-"/>
                                     </div>
                                 </div>  
                             </div>

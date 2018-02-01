@@ -16,7 +16,7 @@
             var piscinas=0;
             var musculacion=0;
             //var ruta = 'https://protected-reef-73935.herokuapp.com/';
-            var ruta = 'http://localhost:8080/AnalisisDeportivoMalaga';
+            var ruta = 'http://localhost:8080/AnalisisDeportivoMalaga/';
     function cambiaCapa(obj,i){
             
         if(obj.checked){

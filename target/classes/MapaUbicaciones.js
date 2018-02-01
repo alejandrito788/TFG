@@ -8,13 +8,15 @@
             var layerPrincipal;
             var map;
             var sql;
+            var latitudInicial;
+            var longitudInicial;
             var miUbicacion;
             var cartoMap;
             var centrosdeportivos = 1; //esta mostrandose
             var piscinas=0;
             var musculacion=0;
-            var ruta = 'https://protected-reef-73935.herokuapp.com/';
-            //var ruta = 'http://localhost:8080/AnalisisDeportivoMalaga';
+            //var ruta = 'https://protected-reef-73935.herokuapp.com/';
+            var ruta = 'http://localhost:8080/AnalisisDeportivoMalaga';
     function cambiaCapa(obj,i){
             
         if(obj.checked){
@@ -252,6 +254,8 @@
                         var iLng = objPosicion.coords.longitude;
                         document.getElementById('miLat').value=iLat;
                         document.getElementById('miLng').value=iLng;
+                        latitudInicial=iLat;
+                        longitudInicial=iLng;
                         marcarPunto();                  
                         }); 
                         
@@ -271,7 +275,10 @@
                         document.getElementById("direccionConcreta").style.display='none';
                         document.getElementById("icono").style.display='none';
                         document.getElementById("btnUbicacion").style.display='none';
+                        document.getElementById('miLat').value=latitudInicial;
+                        document.getElementById('miLng').value=longitudInicial;
                         miUbicacion.hide();
+                        marcarPunto();
                 }
             }
 

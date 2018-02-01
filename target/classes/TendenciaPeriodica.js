@@ -8,8 +8,8 @@
         var deporteActivo = "list-group-item active";
         var seleccionados = ["No", "No", "No","No"];
         var opera=0;    //Marca si el procesamiento esta operando o detenido
-        var ruta = 'https://protected-reef-73935.herokuapp.com/';
-        //var ruta='http://localhost:8080/AnalisisDeportivoMalaga';
+        //var ruta = 'https://protected-reef-73935.herokuapp.com/';
+        var ruta='http://localhost:8080/AnalisisDeportivoMalaga';
 
         function iniciaDeporteSeleccionado(){
             deporte = document.getElementById('deporteConcreto').value;
@@ -40,8 +40,10 @@
             x = "width: "+document.getElementById('numTendencia').value+"%"; 
                document.getElementById('tendenciaProg').style=x;
         }
-
+        
         function tendenciaPeriodica(){
+            document.getElementById('panelNumeroTweets').style.display='block';
+            
             $.ajax({
                 type: 'GET',
                 url: ruta+'/actualizaTendencia',
@@ -49,6 +51,8 @@
                     var result=res.split(";");
                     $('#numTendencia').val(result[0]);
                     iniciaBarraSeleccion();
+                    
+                    document.getElementById('numTweets').value=result[1];
                     
                     if(parseInt(result[1])<70){
                         alert('Analisis poco significativo. Poco trafico en Twitter\n\
@@ -61,6 +65,7 @@
         
         function detieneProceso(){
             opera=0;
+            document.getElementById('panelNumeroTweets').style.display='none';
             clearInterval(temporizador);
             
             $.ajax({

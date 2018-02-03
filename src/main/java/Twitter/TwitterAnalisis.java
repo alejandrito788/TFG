@@ -173,9 +173,7 @@ public class TwitterAnalisis extends Thread {
                 preparaContadores(numDeporte);
                 query.setSinceId(query.getSinceId()+100);
                 
-                if(numTweets<70){                           //avisara de que empieza a no ser significativo
-                    Mapping.setNumeroTweets(numTweets); 
-                }
+                Mapping.setNumeroTweets(numTweets*3);   //TWEETS ANALIZADOS POR MN. *3 porque da valor cada 20s 
               
                 this.sleep(TIEMPO);
                

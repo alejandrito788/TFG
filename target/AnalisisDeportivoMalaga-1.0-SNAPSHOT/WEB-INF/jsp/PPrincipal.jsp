@@ -221,10 +221,10 @@
                             <div class="col-md-11 col-xs-11 col-lg-11 col-xl-11">
                                 <div id="panelNumeroTweets" class="panel panel-default" style="display: none">
                                 <div class="panel-heading">
-                                     <h6 class="panel-title">Personas pensando en tus deportes seleccionados(%)</h6>
+                                     <h6 class="panel-title">Tweets analizados por minutos</h6>
                                  </div>
                                     <div class="panel-body">
-                                        <label id="numTweets" value="-"/>
+                                        <output type="text" id="numTweets" value="-"/>
                                     </div>
                                 </div>  
                             </div>

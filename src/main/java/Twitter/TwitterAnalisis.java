@@ -41,7 +41,7 @@ public class TwitterAnalisis extends Thread {
     private static final String[] otros = Claves.ClavesOtros.getClaves();
     private static final int TIEMPO = 20000; //peticiones cada 20 segundos
     private static final int RADIO = 100; //km
-    private static final int FACTOR = 3; //factor de reproduccion de tendencia
+    private static final int FACTOR = 5; //factor de reproduccion de tendencia
 
     private static TwitterAnalisis instancia;
     private TwitterFactory tFactory;

@@ -16,7 +16,7 @@
             var piscinas=0;
             var musculacion=0;
             var ruta = 'https://protected-reef-73935.herokuapp.com/';
-            //var ruta = 'http://localhost:8080/AnalisisDeportivoMalaga/';
+           
     function cambiaCapa(obj,i){
             
         if(obj.checked){
@@ -57,7 +57,7 @@
                     if(filtrakm.value<20){                           
                           filtraKm(filtrakm.value);
                     }else{
-                        capas[2].setSQL("SELECT * FROM centrosdeportivos WHERE nombre_ins LIKE 'PISCINA%'");
+                        capas[2].setSQL("SELECT * FROM centrosdeportivos WHERE nombre_ins LIKE 'PISC%'");
                     }                       
                     break;
                 case 5:     //ruido
@@ -72,7 +72,7 @@
                         if(filtrakm.value<20){                           
                           filtraKm(filtrakm.value);
                         }else{
-                            capas[2].setSQL("SELECT * FROM centrosdeportivos WHERE nombre_ins LIKE 'PISCINA%'");
+                            capas[2].setSQL("SELECT * FROM centrosdeportivos WHERE nombre_ins LIKE 'PISC%'");
                         }
                     }else if(musculacion===1){
                         if(filtrakm.value<20){                           
@@ -95,7 +95,7 @@
                         if(filtrakm.value<20){                           
                           filtraKm(filtrakm.value);
                         }else{
-                            capas[2].setSQL("SELECT * FROM centrosdeportivos WHERE nombre_ins LIKE 'PISCINA%'");
+                            capas[2].setSQL("SELECT * FROM centrosdeportivos WHERE nombre_ins LIKE 'PISC%'");
                         }
                     }else if(centrosdeportivos===1){
                         if(filtrakm.value<20){                           
@@ -192,7 +192,7 @@
                  if(existen===true){
                        apareceUnaVez=false;
                     if(piscinas===1){
-                        capas[2].setSQL("SELECT * FROM centrosdeportivos WHERE (nombre_ins LIKE 'PISCINA%') AND (cartodb_id IN"+lista+")");
+                        capas[2].setSQL("SELECT * FROM centrosdeportivos WHERE (nombre_ins LIKE 'PISC%') AND (cartodb_id IN"+lista+")");
                     }else if(musculacion===1){
                         capas[2].setSQL("SELECT * FROM centrosdeportivos WHERE (nombre LIKE 'ZONA DE%' OR nombre LIKE 'GIM') AND (cartodb_id IN"+lista+")");
                     }else if(centrosdeportivos===1){

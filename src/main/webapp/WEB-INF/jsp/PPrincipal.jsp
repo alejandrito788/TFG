@@ -22,12 +22,12 @@
         <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>       
         <link href="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/slider.css" rel="stylesheet">
         <script src="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/slider.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">   
-        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">       
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
         <!-- css-->
         <link rel="stylesheet" type="text/css" href="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/PPrincipal.css">
+        
         <!-- modulacion de codigo javascript-->
         <script src="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/AmanecerWebService.js"></script>
         <script src="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/MapaUbicaciones.js"></script>
@@ -221,7 +221,7 @@
                             <div class="col-md-11 col-xs-11 col-lg-11 col-xl-11">
                                 <div id="panelNumeroTweets" class="panel panel-default" style="display: none">
                                 <div class="panel-heading">
-                                     <h6 class="panel-title">Tweets analizados por minutos</h6>
+                                     <h6 class="panel-title">Tweets analizados por minuto</h6>
                                  </div>
                                     <div class="panel-body">
                                         <output type="text" id="numTweets" value="-"/>

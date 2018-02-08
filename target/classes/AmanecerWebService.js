@@ -30,5 +30,5 @@ window.onload=horario();
    
 //BOTON DE AYUDA EN ANALISIS DE TENDENCIA
 function ayuda(){
-           alert('Muestra del porcentaje de personas en Twitter que habla sobre los deportes que has marcado.');
+           confirm('Muestra del porcentaje de personas en Twitter que habla sobre los deportes que has marcado.');
        }

@@ -2,7 +2,7 @@
     Author     : alejandroMac
 */
 
-/*
+/* por defecto y resoluciones que no cumplen media queries */
     #map {
         height: 80%;        
         width: 100%;
@@ -68,7 +68,7 @@
         }
         .panel-title{
             font-size: 80%;
-        }*/
+        }
         
 /* Smartphones (portrait and landscape) ----------- */        
 @media only screen 
@@ -286,7 +286,8 @@ and (min-width : 1224px) {
             position:relative;
         }
         .item{
-           padding:50%;      
+           padding:50px; 
+           left: 50%;
         }
         .panel-title{
             font-size: 80%;
@@ -361,7 +362,8 @@ and (min-width : 1824px) {
             position:relative;
         }
         .item{
-           padding:50%;      
+           padding:50px; 
+           left: 50%;
         }
         .panel-title{
             font-size: 80%;

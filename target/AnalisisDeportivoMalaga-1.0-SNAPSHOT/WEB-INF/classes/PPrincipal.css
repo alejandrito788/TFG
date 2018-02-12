@@ -116,6 +116,7 @@ and (max-device-width : 450px) {
             position: relative;
             margin-left: 0%;
             margin-top:100%;
+            display: none;
         }
         #panelHorario1{
             width:120%;
@@ -193,6 +194,7 @@ and (max-device-width : 1024px) {
             width: 80%;        
             position: relative;
             margin-left: 20%;
+            display: none;
         }
         #panelHorario1{
             width:120%;

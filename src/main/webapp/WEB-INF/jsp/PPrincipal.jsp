@@ -48,7 +48,9 @@
         </div>
     </div>
         
-                
+       <!--"https://rawgit.com/alejandrito788/TFG/master/src/main/resources/natacion.jpg"-->      
+       <!--"https://rawgit.com/alejandrito788/TFG/master/src/main/resources/ciclismo.jpg"--> 
+       <!--"https://rawgit.com/alejandrito788/TFG/master/src/main/resources/correr.jpg"-->
     <div class="page-header">           
         <div id="contenedor">
             <div id="myCarousel" class="carousel slide">
@@ -59,9 +61,9 @@
                 </ol>
                 <!-- Carousel items -->
                 <div class="carousel-inner">
-                    <div class="active item"><img  src="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/natacion.jpg" alt="banner2" /></div>
-                    <div class="item"><img  src="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/ciclismo.jpg" alt="banner3" /></div>
-                    <div class="item"><img  src="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/correr.jpg" alt="banner4" /></div>     
+                    <div class="active item"><img  src="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/tri1.jpg" alt="banner2" /></div>
+                    <div class="item"><img  src="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/tri2.jpg" alt="banner3" /></div>
+                    <div class="item"><img  src="https://rawgit.com/alejandrito788/TFG/master/src/main/resources/tri3.jpg" alt="banner4" /></div>     
                 </div>
             <!-- Carousel nav -->
             <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>

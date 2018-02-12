@@ -100,7 +100,7 @@ and (max-device-width : 450px) {
       h1{
         font-family: Vegur, Verdana, Sans-serif;
         font-weight: 800;
-        font-size: 70%;
+        font-size: 120%;
         text-align: center;
         }
         .page-header{
@@ -110,29 +110,18 @@ and (max-device-width : 450px) {
             border: solid;
         }
         #panelHorario{
-            width: 80%;        
-            position: relative;
-            margin-left: 0%;
-            margin-top:100%;
             display: none;
         }
-        #panelHorario1{
-            width:120%;
-        }
-        #panelHorario2{
-            width:120%;
-        }
-        
+       
         #panelUbicacion{
             width: 300px;
-            margin-left:10px;
         }
         #icono{
             height: 50px;
             width: 50px;
         }
         #logo{
-            width:800%;
+            width:400%;
             height:800%;
             left:150%;
             top:30px;
@@ -147,6 +136,7 @@ and (max-device-width : 450px) {
         }
         #panelHorarioSub{
             display:block;
+            width:300px;
         }
 }
 
@@ -189,21 +179,11 @@ and (max-device-width : 1024px) {
             border: solid;
         }
         #panelHorario{
-            width: 80%;        
-            position: relative;
-            margin-left: 20%;
             display: none;
-        }
-        #panelHorario1{
-            width:120%;
-        }
-        #panelHorario2{
-            width:120%;
         }
         
         #panelUbicacion{
             width: 300px;
-            margin-left:10px;
         }
         #icono{
             height: 50px;
@@ -225,6 +205,7 @@ and (max-device-width : 1024px) {
         }
         #panelHorarioSub{
             display:block;
+            width: 300px;
         }
 }
 

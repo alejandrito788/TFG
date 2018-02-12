@@ -115,7 +115,7 @@ and (max-device-width : 450px) {
         }
        
         #panelUbicacion{
-            width: 300px;
+            width: 250px;
         }
         #icono{
             height: 50px;
@@ -140,7 +140,7 @@ and (max-device-width : 450px) {
             width:300px;
         }
         #filtradoKm{
-            width: 50px;
+            width: 10px;
         }
 }
 
@@ -187,7 +187,7 @@ and (max-device-width : 1024px) {
         }
         
         #panelUbicacion{
-            width: 300px;
+            width: 250px;
         }
         #icono{
             height: 50px;
@@ -212,7 +212,7 @@ and (max-device-width : 1024px) {
             width: 300px;
         }
         #filtradoKm{
-            width: 50px;
+            width: 10px;
         }
 }
 

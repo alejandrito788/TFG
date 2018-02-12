@@ -177,6 +177,33 @@
               </div>
           </div>
         </div>
+         
+         <div id="panelHorarioSub" class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><span class="glyphicon glyphicon-time"></span>Horario</h3>
+            </div>
+            <div class="panel-body">
+                <div id="panelHorario3" class="panel panel-default">
+                    <div class="panel-heading">
+                        <h6 class="panel-title">Amanecer</h6>
+                    </div>
+                    <div class="panel-body">
+                     <label id="amanecer" value=""/>
+                     </div>
+                </div>
+                    
+                <div id="panelHorario4" class="panel panel-default">
+                    <div class="panel-heading">
+                        <h6 class="panel-title">Atardecer</h6>
+                    </div>
+                    <div class="panel-body">
+                        <label id="atardecer" value=""/>
+                    </div>
+                </div>
+                        </div>
+               </div>
+                
+         
          <div id="panelCEP" class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title">Tendencia deportiva</h3>

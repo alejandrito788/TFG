@@ -69,6 +69,9 @@
         .panel-title{
             font-size: 80%;
         }
+        #panelHorarioSub{
+            display:none;
+        }
         
 /* Smartphones (portrait and landscape) ----------- */        
 @media only screen 
@@ -143,6 +146,9 @@ and (max-device-width : 450px) {
         .panel-title{
             font-size: 80%;
         }
+        #panelHorarioSub{
+            display:block;
+        }
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -216,6 +222,9 @@ and (max-device-width : 1024px) {
         }
         .panel-title{
             font-size: 80%;
+        }
+        #panelHorarioSub{
+            display:block;
         }
 }
 
@@ -292,6 +301,9 @@ and (min-width : 1224px) {
         .panel-title{
             font-size: 80%;
         }
+        #panelHorarioSub{
+            display:none;
+        }
 
 }
 
@@ -367,5 +379,8 @@ and (min-width : 1824px) {
         }
         .panel-title{
             font-size: 80%;
+        }
+        #panelHorarioSub{
+            display:none;
         }
 }

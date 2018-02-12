@@ -71,6 +71,7 @@
             display:none;
         }
         
+        
 /* Smartphones (portrait and landscape) ----------- */        
 @media only screen 
 and (min-device-width : 150px) 
@@ -137,6 +138,9 @@ and (max-device-width : 450px) {
         #panelHorarioSub{
             display:block;
             width:300px;
+        }
+        #filtradoKm{
+            width: 50px;
         }
 }
 
@@ -206,6 +210,9 @@ and (max-device-width : 1024px) {
         #panelHorarioSub{
             display:block;
             width: 300px;
+        }
+        #filtradoKm{
+            width: 50px;
         }
 }
 

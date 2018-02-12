@@ -6,6 +6,7 @@
     #map {
         height: 80%;        
         width: 100%;
+        border: solid;
       }
    
       html, body {
@@ -30,9 +31,6 @@
         }
         .page-header{
             background: lightblue url("https://rawgit.com/alejandrito788/TFG/master/src/main/resources/cielo%20claro.JPG") no-repeat
-        }
-        #map{
-            border: solid;
         }
         #panelHorario{
             width: 80%;        
@@ -239,6 +237,7 @@ and (min-width : 1224px) {
       #map {
         height: 80%;        
         width: 100%;
+        border: solid;
       }
    
       html, body {
@@ -258,14 +257,11 @@ and (min-width : 1224px) {
       h1{
         font-family: Vegur, Verdana, Sans-serif;
         font-weight: 800;
-        font-size: 300%;
+        font-size: 350%;
         text-align: center;
         }
         .page-header{
             background: lightblue url("https://rawgit.com/alejandrito788/TFG/master/src/main/resources/cielo%20claro.JPG") no-repeat
-        }
-        #map{
-            border: solid;
         }
         #panelHorario{
             width: 80%;        
@@ -291,14 +287,13 @@ and (min-width : 1224px) {
         #logo{
             height:160%;
             width:160%;
-            left:150%;
+            left:180%;
             top:30px;
             padding: 5%;
             position:relative;
         }
         .item{
-           padding:50px; 
-           left: 50%;
+           padding:50px;   
         }
         .panel-title{
             font-size: 80%;
@@ -318,6 +313,7 @@ and (min-width : 1824px) {
       #map {
         height: 80%;        
         width: 100%;
+        border: solid;
       }
    
       html, body {
@@ -337,14 +333,11 @@ and (min-width : 1824px) {
       h1{
         font-family: Vegur, Verdana, Sans-serif;
         font-weight: 800;
-        font-size: 500%;
+        font-size: 350%;
         text-align: center;
         }
         .page-header{
             background: lightblue url("https://rawgit.com/alejandrito788/TFG/master/src/main/resources/cielo%20claro.JPG") no-repeat
-        }
-        #map{
-            border: solid;
         }
         #panelHorario{
             width: 80%;        
@@ -370,14 +363,13 @@ and (min-width : 1824px) {
         #logo{
             height:160%;
             width:160%;
-            left:150%;
+            left:180%;
             top:30px;
             padding: 5%;
             position:relative;
         }
         .item{
-           padding:50px; 
-           left: 50%;
+           padding:50px;   
         }
         .panel-title{
             font-size: 80%;

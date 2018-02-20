@@ -191,7 +191,7 @@
                         <h6 class="panel-title">Amanecer</h6>
                     </div>
                     <div class="panel-body">
-                     <label id="amanecer" value="7:59"/>
+                     <label id="amanecer2" value=""/>
                      </div>
                 </div>
                     
@@ -200,7 +200,7 @@
                         <h6 class="panel-title">Atardecer</h6>
                     </div>
                     <div class="panel-body">
-                        <label id="atardecer" value="19:04"/>
+                        <label id="atardecer2" value=""/>
                     </div>
                 </div>
                         </div>

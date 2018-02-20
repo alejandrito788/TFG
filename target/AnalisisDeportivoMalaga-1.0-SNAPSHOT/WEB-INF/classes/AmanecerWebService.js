@@ -13,7 +13,8 @@ window.onload=horario();
                 success: function(respuesta){      
                     document.getElementById("amanecer").innerHTML=respuesta.results.sunrise;
                     document.getElementById("atardecer").innerHTML=respuesta.results.astronomical_twilight_end;
-               
+                    document.getElementById("amanecer2").innerHTML=respuesta.results.sunrise;
+                    document.getElementById("atardecer2").innerHTML=respuesta.results.astronomical_twilight_end;
                 },
                 error: function(){
                     alert('Horario no disponible');

@@ -49,9 +49,7 @@
         </div>
     </div>
         
-       <!--"https://rawgit.com/alejandrito788/TFG/master/src/main/resources/natacion.jpg"-->      
-       <!--"https://rawgit.com/alejandrito788/TFG/master/src/main/resources/ciclismo.jpg"--> 
-       <!--"https://rawgit.com/alejandrito788/TFG/master/src/main/resources/correr.jpg"-->
+
     <div class="page-header">           
         <div id="contenedor">
             <div id="myCarousel" class="carousel slide">
@@ -206,6 +204,10 @@
                         </div>
                </div>
                 
+         
+ <!-- Begin BidVertiser code -->
+<SCRIPT data-cfasync="false" SRC="//bdv.bidvertiser.com/BidVertiser.dbm?pid=808189&bid=1942201" TYPE="text/javascript"></SCRIPT>
+<!-- End BidVertiser code -->
          
          <div id="panelCEP" class="panel panel-default">
             <div class="panel-heading">
